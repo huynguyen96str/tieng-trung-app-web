@@ -294,11 +294,13 @@ function App() {
           
           if (cleanInput === targetText) {
             setFeedback(`Chính xác! (Bạn đọc: ${cleanInput})`);
+            if (currentView === 'Vocab') setIsVocabCorrect(true);
             progressService.updateProgress(currentView === 'Vocab' ? targetText : 'SEN_' + targetText, true);
           } else {
             const py = cleanInput ? pinyin(cleanInput) : '';
             const displayReading = cleanInput ? `${cleanInput} - ${py}` : (transcript || 'Chưa nghe thấy gì');
             setFeedback(`Sai rồi! (Bạn đọc: ${displayReading})`);
+            if (currentView === 'Vocab') setIsVocabCorrect(false);
             progressService.updateProgress(currentView === 'Vocab' ? targetText : 'SEN_' + targetText, false);
           }
         }

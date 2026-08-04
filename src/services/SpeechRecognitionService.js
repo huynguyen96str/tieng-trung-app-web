@@ -22,6 +22,8 @@ export class SpeechRecognitionService {
         this.recognition.interimResults = true;
         this.recognition.lang = 'zh-CN';
 
+        this.isFinished = false;
+
         this.recognition.onresult = (event) => {
             let fullTranscript = '';
             for (let i = 0; i < event.results.length; i++) {
@@ -31,17 +33,19 @@ export class SpeechRecognitionService {
         };
 
         this.recognition.onerror = (event) => {
+            if (this.isFinished) return; // Bỏ qua lỗi rác (như audio-capture) của Safari sau khi đã kết thúc
             onError(event.error);
         };
 
         this.recognition.onend = () => {
+            this.isFinished = true;
             if(onEnd) onEnd();
         };
 
         try {
             this.recognition.start();
         } catch(e) {
-            onError(e.message);
+            if (!this.isFinished) onError(e.message);
         }
     }
 

@@ -1,21 +1,21 @@
 export class SpeechRecognitionService {
     constructor() {
         this.recognition = null;
-        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-        if (SpeechRecognition) {
-            this.recognition = new SpeechRecognition();
-            // Bật continuous = false để sửa lỗi iOS tự động ngắt kết nối ghi âm ngay lập tức
-            this.recognition.continuous = false;
-            this.recognition.interimResults = true;
-            this.recognition.lang = 'zh-CN';
-        }
     }
 
     startRecording(onResult, onError, onEnd) {
-        if (!this.recognition) {
-            onError("Trình duyệt của bạn không hỗ trợ tính năng Ghi âm (Speech Recognition). Vui lòng dùng Chrome hoặc Edge.");
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            onError("Trình duyệt của bạn không hỗ trợ tính năng Ghi âm (Speech Recognition). Vui lòng dùng Chrome, Edge hoặc Safari (phiên bản mới).");
             return;
         }
+
+        // Khởi tạo lại mỗi lần để tránh lỗi crash hoặc ngắt lập tức trên iOS
+        this.recognition = new SpeechRecognition();
+        this.recognition.continuous = false;
+        // Tắt interimResults giúp iOS Safari ổn định hơn rất nhiều
+        this.recognition.interimResults = false;
+        this.recognition.lang = 'zh-CN';
 
         this.recognition.onresult = (event) => {
             let fullTranscript = '';

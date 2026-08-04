@@ -259,7 +259,6 @@ function App() {
   };
 
   const toggleRecording = () => {
-    initAudioEngine();
     const targetText = currentView === 'Vocab' ? currentVocab.Chinese : currentSentence.Chinese;
     
     if (isRecording) {

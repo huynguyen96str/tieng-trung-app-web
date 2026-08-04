@@ -177,10 +177,10 @@ function App() {
     let options;
     if (vocabDirection === 'Trung -> Việt') {
       options = allV.map(v => v.Meaning).filter(m => m !== correctV.Meaning);
-      options = options.sort(() => 0.5 - Math.random()).slice(0, 9);
+      options = options.sort(() => 0.5 - Math.random()).slice(0, 3);
       
       const dummyWords = ["Tuyệt vời", "Ngày mai", "Buổi sáng", "Quyển sách", "Giáo viên", "Học sinh", "Nhà hàng", "Đi chơi", "Uống cà phê", "Rất tốt", "Đồng ý", "Không sao", "Làm việc", "Gia đình", "Bạn bè"];
-      while (options.length < 9) {
+      while (options.length < 3) {
         const randomDummy = dummyWords[Math.floor(Math.random() * dummyWords.length)];
         if (!options.includes(randomDummy) && randomDummy !== correctV.Meaning) {
           options.push(randomDummy);
@@ -189,10 +189,10 @@ function App() {
       options.push(correctV.Meaning);
     } else {
       options = allV.map(v => v.Chinese).filter(c => c !== correctV.Chinese);
-      options = options.sort(() => 0.5 - Math.random()).slice(0, 9);
+      options = options.sort(() => 0.5 - Math.random()).slice(0, 3);
       
       const dummyWords = ["苹果", "香蕉", "咖啡", "老师", "学生", "餐厅", "去玩", "喝茶", "很好", "同意", "没关系", "工作", "家庭", "朋友", "明天"];
-      while (options.length < 9) {
+      while (options.length < 3) {
         const randomDummy = dummyWords[Math.floor(Math.random() * dummyWords.length)];
         if (!options.includes(randomDummy) && randomDummy !== correctV.Chinese) {
           options.push(randomDummy);
@@ -699,7 +699,10 @@ function App() {
               )}
               
               {!isMeaningVisible ? (
-                <button className="btn-show-meaning" onClick={() => setIsMeaningVisible(true)}>
+                <button className="btn-show-meaning" onClick={() => {
+                  setIsMeaningVisible(true);
+                  setVocabFeedback('Đây là đáp án đúng:');
+                }}>
                   👁️ Xem Kết Quả
                 </button>
               ) : (
@@ -707,6 +710,8 @@ function App() {
                   if (currentVocabIndex < vocabList.length - 1) {
                     setCurrentVocabIndex(currentVocabIndex + 1);
                     generateVocabOptions(vocabList[currentVocabIndex + 1], vocabList);
+                  } else {
+                    setVocabFeedback('Hoàn thành bài học từ vựng!');
                   }
                 }}>
                   Tiếp theo ➔
@@ -719,22 +724,38 @@ function App() {
             </div>
 
             <div className="options-grid">
-              {vocabOptions.map((opt, idx) => (
-                <button 
-                  key={idx} 
-                  className="option-btn"
-                  onClick={() => handleVocabAnswer(opt)}
-                  disabled={isMeaningVisible}
-                >
-                  <span style={{marginRight: '8px', color: '#A0AEC0', fontSize: '14px'}}>{idx + 1}.</span>
-                  {opt}
-                  {vocabDirection === 'Việt -> Trung' && (
-                    <div style={{fontSize: '13px', color: '#718096', marginTop: '4px'}}>
-                      {pinyin(opt)}
-                    </div>
-                  )}
-                </button>
-              ))}
+              {vocabOptions.map((opt, idx) => {
+                const isCorrectOption = vocabDirection === 'Trung -> Việt' 
+                  ? opt === currentVocab.Meaning
+                  : opt === currentVocab.Chinese;
+                
+                let optionStyle = {};
+                if (isMeaningVisible) {
+                  if (isCorrectOption) {
+                    optionStyle = { backgroundColor: '#48bb78', color: 'white', borderColor: '#48bb78' };
+                  } else {
+                    optionStyle = { opacity: 0.5 };
+                  }
+                }
+
+                return (
+                  <button 
+                    key={idx} 
+                    className="option-btn"
+                    onClick={() => handleVocabAnswer(opt)}
+                    disabled={isMeaningVisible}
+                    style={optionStyle}
+                  >
+                    <span style={{marginRight: '8px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#A0AEC0', fontSize: '14px'}}>{idx + 1}.</span>
+                    {opt}
+                    {vocabDirection === 'Việt -> Trung' && (
+                      <div style={{fontSize: '13px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#718096', marginTop: '4px'}}>
+                        {pinyin(opt)}
+                      </div>
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </div>
         )}

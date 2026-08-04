@@ -1,10 +1,11 @@
 export class SpeechRecognitionService {
     constructor() {
         this.recognition = null;
-        if ('webkitSpeechRecognition' in window) {
-            // eslint-disable-next-line no-undef
-            this.recognition = new webkitSpeechRecognition();
-            this.recognition.continuous = true;
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            this.recognition = new SpeechRecognition();
+            // Bật continuous = false để sửa lỗi iOS tự động ngắt kết nối ghi âm ngay lập tức
+            this.recognition.continuous = false;
             this.recognition.interimResults = true;
             this.recognition.lang = 'zh-CN';
         }

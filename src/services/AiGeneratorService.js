@@ -21,6 +21,12 @@ Ví dụ:
 Quy tắc 4: Mẫu câu
 - [Tiếng Trung] ([Phiên Âm]) - [Nghĩa Tiếng Việt]
 
+Quy tắc 5: Giải thích cú pháp (QUAN TRỌNG)
+Dưới mỗi mẫu câu (ở Quy tắc 4), bạn HÃY TỰ PHÂN TÍCH và tự viết thêm một dòng giải thích ngữ pháp, cấu trúc hoặc cách dùng từ của câu đó. Dòng giải thích này phải thụt lề 2 dấu cách và bắt đầu bằng \`> Giải thích: \`.
+
+Quy tắc 6: Giữ nguyên nội dung Ngữ pháp (RẤT QUAN TRỌNG)
+Tuyệt đối KHÔNG được tóm tắt hay bỏ sót bất kỳ phần giải thích ngữ pháp, lý thuyết, công thức, hay lưu ý nào có trong file PDF. Toàn bộ nội dung lý thuyết, cấu trúc ngữ pháp phải được giữ nguyên vẹn chi tiết như bản gốc và trình bày rõ ràng dưới các mục ## hoặc ###.
+
 Dữ liệu đầu vào:
 ${pdfText}`;
 

@@ -498,7 +498,15 @@ function App() {
     setIsGeneratingSentences(true);
     try {
       const aiService = new AiGeneratorService();
-      const vocabs = selectedLesson.Vocabularies?.map(v => v.Chinese) || [];
+      const allVocabs = [];
+      const currentIndex = lessons.findIndex(l => l.Title === selectedLesson.Title);
+      const startIndex = Math.max(0, currentIndex - 1);
+      for (let i = startIndex; i <= currentIndex; i++) {
+         if (lessons[i]?.Vocabularies) {
+             allVocabs.push(...lessons[i].Vocabularies.map(v => v.Chinese));
+         }
+      }
+      const vocabs = Array.from(new Set(allVocabs));
       const grammars = Array.from(new Set(selectedLesson.Sentences?.map(s => s.GrammarContext).filter(Boolean)));
       const count = Math.max(5, grammars.length + 2);
       

@@ -66,6 +66,15 @@ export class MarkdownParser {
                 }
                 continue;
             }
+
+            // Fallback: accumulate as grammar context if not matching any structural marker
+            if (!line.startsWith("|") && !line.startsWith("#") && !line.startsWith("-") && !line.startsWith("* Từ vựng bổ sung") && !line.startsWith("*Gợi ý")) {
+                if (currentContext) {
+                    currentContext += "\n" + line.trim();
+                } else {
+                    currentContext = line.trim();
+                }
+            }
         }
 
         return lesson;

@@ -657,12 +657,9 @@ function App() {
                 )}
               </div>
 
-              {/* Show Pinyin only when answered or in multiple-choice revealed state */}
-              {(isMeaningVisible || vocabPracticeMode !== 'WritePinyin') && (
-                <div className="vocab-pinyin" style={{ visibility: isVocabRevealed ? 'visible' : 'hidden' }}>
-                  {currentVocab.Pinyin}
-                </div>
-              )}
+              <div className="vocab-pinyin" style={{ visibility: isVocabRevealed ? 'visible' : 'hidden' }}>
+                {currentVocab.Pinyin}
+              </div>
 
               {/* Show Meaning in Pinyin mode when revealed */}
               {vocabPracticeMode === 'WritePinyin' && isMeaningVisible && (

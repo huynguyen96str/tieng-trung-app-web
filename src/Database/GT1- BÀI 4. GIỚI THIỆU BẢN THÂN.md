@@ -1,335 +1,108 @@
 # GT1- BÀI 4. GIỚI THIỆU BẢN THÂN
 
-## 自我介绍 (zì wǒ jiè shào) - GIỚI THIỆU BẢN THÂN
-
----
-
-## 01. TỪ VỰNG
-
-| STT | Tiếng Trung | Phiên Âm | Nghĩa |
-|---|---|---|---|
-| 1 | 是 | shì | là |
-| 2 | 不 | bù | không |
-| 3 | 吗 | ma | không? (trợ từ câu hỏi) |
-| 4 | 也 | yě | cũng |
-| 5 | 有 | yǒu | có |
-| 6 | 怎么 | zěnme | thế nào / làm sao / như thế nào |
-| 7 | 会 | huì | biết, có thể |
-| 8 | 在 | zài | ở, đang |
-| 9 | 来 | lái | đến |
-| 10 | 从...到... | cóng... dào... | từ... đến... |
-| 11 | 哪儿 | nǎr | ở đâu |
-| 12 | 现在 | xiànzài | bây giờ, hiện tại |
-| 13 | 这 | zhè | Đây, này |
-| 14 | 那 | nà | Kia, đó |
-| 15 | 人 | rén | người |
-| 16 | 中国 | Zhōngguó | Trung Quốc |
-| 17 | 越南 | Yuènán | Việt Nam |
-| 18 | 汉语 | Hànyǔ | tiếng Trung |
-| 19 | 工作 | gōngzuò | công việc, làm việc |
-| 20 | 学习 | xuéxí | học tập |
-| 21 | 学生 | xuéshēng | học sinh |
-| 22 | 老师 | lǎoshī | giáo viên |
-| 23 | 公司 | gōngsī | công ty |
-| 24 | 说 | shuō | nói |
-| 25 | 一点 | yìdiǎn | một chút |
-| 26 | 还是 | háishì | hay/hoặc |
-| 27 | 介绍 | jièshào | Giới thiệu |
-| 28 | 一下 | yíxià | Một chút, một lát |
-| 29 | 住 | zhù | Sống |
-| 30 | 可以 | kěyǐ | Có thể(Giữa câu), được(Đầu câu) |
-| 31 | 问 | wèn | Hỏi |
-| 32 | 问题 | wèntí | Câu hỏi, vấn đề |
-| 33 | 兄弟姐妹 | xiōngdì jiěmèi | Anh chị em |
-| 34 | 弟弟 | dìdi | Em trai |
-| 35 | 爷爷 | yéye | ông nội |
-| 36 | 奶奶 | nǎinai | Bà nội |
-| 37 | 爸爸 | bàba | Bố |
-| 38 | 妈妈 | māma | Mẹ |
-| 39 | 表哥 | biǎogē | Anh họ |
-| 40 | 表姐 | biǎojiě | Chị họ |
-| 41 | 表妹 | biǎomèi | Em gái họ |
-| 42 | 老婆 | lǎopo | Vợ |
-| 43 | 老公 | lǎogōng | Chồng |
-| 44 | 女儿 | nǚ'ér | Con gái |
-| 45 | 儿子 | érzi | Con trai |
-
----
-
-## 02. NGỮ PHÁP CƠ BẢN
-
-### 1. 吗 (ma) – DÙNG ĐỂ HỎI
-• Muốn hỏi có / không → thêm **吗 (ma)** ở **CUỐI** câu = câu hỏi chính phản (sự kết hợp của phủ định và khẳng định).
-• 有 (yǒu): có, 没有 (méi yǒu): không có.
-• 是 (shì): là, 不是 (bú shì): không phải là.
-
-**Ví dụ:**
-- 你是越南人吗？ (Nǐ shì Yuènán rén ma?) - Bạn là người Việt Nam không?
-  > Giải thích: Muốn hỏi có / không, Câu hỏi chính phản. Có 吗 (ma ) ở cuối câu.
-- 你在公司工作吗？ (Nǐ zài gōngsī gōngzuò ma?) - Bạn làm việc ở công ty không?
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-
----
-
-### 2. 有 (yǒu) / 没有 (méi yǒu) – CÓ / KHÔNG CÓ
-• 有 = có (yǒu)
-• 没有 = không có (méi yǒu)
-• **Không dùng 不有**
-
-**Ví dụ:**
-- 我有工作。 (Wǒ yǒu gōngzuò.) - Tôi có công việc.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-- 我没有公司。 (Wǒ méi yǒu gōngsī.) - Tôi không có công ty.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-
----
-
-### 3. 怎么 (zěnme) – SAO / THẾ NÀO / LÀM SAO
-• Hỏi cách làm
-• Hỏi vì sao / sao lại
-
-#### ❖ CÁCH NÓI 1: 怎么 + động từ (làm sao / thế nào)
-- 怎么说？ (Zěnme shuō?) - Nói sao?
-  > Giải thích: 怎么 (zěnme) – đứng đầu câu có ý SAO / THẾ NÀO / LÀM SAO
-- 怎么学习汉语？ (Zěnme xuéxí Hànyǔ?) - Học tiếng Trung thế nào?
-  > Giải thích: 怎么 (zěnme) – đứng đầu câu có ý SAO / THẾ NÀO / LÀM SAO
-
-#### ❖ CÁCH NÓI 2: 怎么 + không / trạng thái (sao lại…)
-- 你怎么不来？ (Nǐ zěnme bù lái?) - Sao bạn không đến?
-  > Giải thích: 怎么(zěnme) ở giữa câu với ý nghĩa: Sao ...(ví dụ: Sao bạn không đến)
-- 你怎么在公司？ (Nǐ zěnme zài gōngsī?) - Sao bạn ở công ty?
-  > Giải thích: 怎么(zěnme) ở giữa câu với ý nghĩa: Sao ...(ví dụ: Sao bạn không đến)
-
-#### ❖ CÁCH NÓI 3: 怎么 (zěnme) + tính từ
-• Thông thường có thêm phó từ 这么 (zhème) / 那么 (nàme):
-• Cấu trúc: **Chủ ngữ + 怎么 + (这么/那么) + Tính từ**
-• Dùng trong câu khen / thán phục / ngạc nhiên.
-• Từ liên quan: 什么 (shénme): gì, là gì | 怎么 (zěnme): thế nào | 帅 (shuài): đẹp trai.
-
----
-
-### 4. 在 (zài) – Ở / Đang
-在 (zài) có 3 cách dùng hay gặp:
-
-#### ❖ CÁCH 1: 在 (zài) + ĐỊA ĐIỂM / NƠI CHỐN (Dịch là: Ở)
-Dùng khi nói bạn đang ở đâu / sống ở đâu.
-- 我在越南。 (Wǒ zài Yuènán.) - Tôi ở Việt Nam.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- 我在公司。 (Wǒ zài gōngsī.) - Tôi ở công ty.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-
-#### ❖ CÁCH 2: 在 + ĐỊA ĐIỂM + ĐỘNG TỪ (Ở đâu + làm gì)
-- 我在公司工作。 (Wǒ zài gōngsī gōngzuò.) - Tôi làm việc ở công ty.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- 我在越南学习汉语。 (Wǒ zài Yuènán xuéxí Hànyǔ.) - Tôi học tiếng Trung ở Việt Nam.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-
-#### ❖ CÁCH 3: 在 (zài) + ĐỘNG TỪ + (ne) (Dùng khi nói đang làm gì)
-- 我在工作。 (Wǒ zài gōngsī gōngzuò / Wǒ zài gōngzuò.) - Tôi đang làm việc.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- 我在学习汉语。 (Wǒ zài xuéxí Hànyǔ.) - Tôi đang học tiếng Trung.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-
----
-
-## 03. MẪU CÂU THÔNG DỤNG
-
-### 1. CÁCH HỎI TÊN – THÔNG DỤNG
-#### ❖ Hỏi:
-- 你叫什么名字？ (Nǐ jiào shénme míngzi?) - Bạn tên là gì?
-- 你叫什么？ (Nǐ jiào shénme?) - Bạn tên gì?
-
-#### ❖ Trả lời:
-- 我叫安。 (Wǒ jiào Ān.) - Tôi tên An.
-- 我叫明。 (Wǒ jiào Míng.) - Tôi tên Minh.
-
----
-
-### 2. LỊCH SỰ (dùng khi mới gặp, người lớn)
-#### ❖ Hỏi:
-- 您叫什么名字？ (Nín jiào shénme míngzi?) - Anh/chị tên là gì? (lịch sự)
-
-#### ❖ Trả lời:
-- 我叫安。 (Wǒ jiào Ān.) - Tôi tên An.
-  > Giải thích: Xưng "我" và trả lời tên như bình thường.
-
----
-
-### 3. CÁCH HỎI HỌ TÊN – TRANG TRỌNG
-#### ❖ Hỏi:
-- 请问您贵姓？ (Qǐngwèn nín guì xìng?) - Xin hỏi quý danh của anh/chị là gì?
-
-#### ❖ Trả lời (họ):
-- 我姓阮。 (Wǒ xìng Ruǎn.) - Tôi họ Nguyễn.
-
-#### ❖ Hỏi họ tên đầy đủ:
-- 您的名字是？ (Nín de míngzi shì?) - Tên của anh/chị là?
-
-#### ❖ Trả lời (họ + tên):
-- 我姓阮，叫安。 (Wǒ xìng Ruǎn, jiào Ān.) - Tôi họ Nguyễn, tên An.
-
----
-
-### 4. HỎI ĐÁP VỀ TÊN TUỔI
-#### ❖ Trẻ em:
-- 你几岁？ (Nǐ jǐ suì?) - Con mấy tuổi?
-  > Giải thích: Hỏi tuổi: S + [几岁 (jǐ suì <10 tuổi) / 多大 (duō dà - người lớn) / 多大年纪 (duō dà niánjì - người lớn/lịch sự)]
-- 我七岁。 (Wǒ qī suì.) - Con 7 tuổi.
-  > Giải thích: Trả lời tuổi: S + [Số tuổi] + 岁 (suì)
-
-#### ❖ Người lớn (dùng phổ biến):
-- 你多大？ (Nǐ duō dà?) - Bạn bao nhiêu tuổi?
-  > Giải thích: Hỏi tuổi: S + [几岁 (jǐ suì <10 tuổi) / 多大 (duō dà - người lớn) / 多大年纪 (duō dà niánjì - người lớn/lịch sự)]
-- 我二十五岁。 (Wǒ èrshíwǔ suì.) - Tôi 25 tuổi.
-  > Giải thích: Trả lời tuổi: S + [Số tuổi] + 岁 (suì)
-
-#### ❖ Người lớn tuổi (lịch sự):
-- 您多大年纪？ (Nín duō dà niánjì?) - Bác bao nhiêu tuổi?
-  > Giải thích: Hỏi tuổi: S + [几岁 (jǐ suì <10 tuổi) / 多大 (duō dà - người lớn) / 多大年纪 (duō dà niánjì - người lớn/lịch sự)]
-- 我六十岁。 (Wǒ liùshí suì.) - Tôi 60 tuổi.
-  > Giải thích: Trả lời tuổi: S + [Số tuổi] + 岁 (suì)
-
----
-
-### 5. ĐẾN TỪ ĐÂU – SỐNG Ở ĐÂU – NGHỀ NGHIỆP
-- 你是哪国人？ (Nǐ shì nǎ guó rén?) - Bạn là người nước nào?
-  > Giải thích: Cấu trúc hỏi quốc tịch: S + 是哪国人 (shì nǎ guó rén)
-- 我是越南人。 (Wǒ shì Yuènán rén.) - Tôi là người Việt Nam.
-  > Giải thích: Cấu trúc trả lời quốc tịch: "我 + 是 + [Tên nước] + 人".
-- 你住在哪儿？ (Nǐ zhù zài nǎr?) - Bạn sống ở đâu?
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- 我住在越南。 (Wǒ zhù zài Yuènán.) - Tôi sống ở Việt Nam.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- 你是学生还是老师？ (Nǐ shì xuéshēng háishì lǎoshī?) - Bạn là học sinh hay giáo viên?
-  > Giải thích: Câu hỏi lựa chọn: "还是(háishì)" (hay là/hoặc là).
-- 我是学生。 (Wǒ shì xuéshēng.) - Tôi là học sinh.
-  > Giải thích: Câu khẳng định danh tính/nghề nghiệp: "我 + 是 + [Nghề nghiệp]".
-
----
-
-### 6. GIA ĐÌNH – SỐ LƯỢNG THÀNH VIÊN
-- 你家有几口人？ (Nǐ jiā yǒu jǐ kǒu rén?) - Gia đình bạn có mấy người?
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-- 我家有四口人。 (Wǒ jiā yǒu sì kǒu rén.) - Gia đình tôi có 4 người.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-- 我有爸爸和妈妈。 (Wǒ yǒu bàba hé māma.) - Tôi có ba và mẹ.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-
-*(Từ vựng gia đình bổ sung: 弟弟 dìdi: em trai | 哥哥 gēge: anh trai | 姐姐 jiějie: chị gái | 妹妹 mèimei: em gái | 老公 lǎogōng: chồng | 老婆 lǎopo: vợ | 爷爷 yéye: ông nội | 奶奶 nǎinai: bà nội | 女儿 nǚ'ér: con gái | 儿子 érzi: con trai)*
-
----
-
-## 04. HỘI THOẠI
-
-### HỘI THOẠI 1: GIỚI THIỆU CƠ BẢN
-- A: 你好，我介绍一下。 (Nǐ hǎo, wǒ jièshào yíxià.) - Xin chào, tôi xin giới thiệu một chút.
-- B: 好的。 (Hǎo de.) - Vâng.
-- A: 我叫安，今年二十五岁。 (Wǒ jiào Ān, jīnnián èrshíwǔ suì.) - Tôi tên An, năm nay 25 tuổi.
-  > Giải thích: Trả lời tuổi: S + [Số tuổi] + 岁 (suì)
-- B: 你是哪国人？ (Nǐ shì nǎ guó rén?) - Bạn là người nước nào?
-  > Giải thích: Câu hỏi quốc tịch dùng đại từ nghi vấn "哪" (nào).
-- A: 我是越南人。 (Wǒ shì Yuènán rén.) - Tôi là người Việt Nam.
-  > Giải thích: Khẳng định quốc tịch bản thân.
-- B: 很高兴认识你。 (Hěn gāoxìng rènshi nǐ.) - Rất vui được làm quen với bạn.
-
----
-
-### HỘI THOẠI 2: CÔNG VIỆC – NƠI SỐNG
-- A: 你好，你现在做什么工作？ (Nǐ hǎo, nǐ xiànzài zuò shénme gōngzuò?) - Chào bạn, hiện tại bạn làm công việc gì?
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- B: 我是学生。 (Wǒ shì xuéshēng.) - Tôi là học sinh.
-  > Giải thích: Cấu trúc "我是 + [Nghề nghiệp]" để giới thiệu thân phận/nghề nghiệp.
-- A: 你住在哪儿？ (Nǐ zhù zài nǎr?) - Bạn sống ở đâu?
-  > Giải thích: Cấu trúc hỏi nơi chốn cư trú "住在哪儿".
-- B: 我住在越南。 (Wǒ zhù zài Yuènán.) - Tôi sống ở Việt Nam.
-  > Giải thích: Cấu trúc trả lời nơi cư trú "住在 + [Tên quốc gia/địa điểm]".
-- A: 你在公司还是在学校？ (Nǐ zài gōngsī háishì zài xuéxiào?) - Bạn ở công ty hay ở trường?
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-- B: 我在学校学习。 (Wǒ zài xuéxiào xuéxí.) - Tôi học ở trường.
-  > Giải thích: S + 在 (zài) + [Địa điểm] + [Hành động / Động từ]: Ai đó ở [đâu] đang làm [gì]
-
----
-
-### HỘI THOẠI 3: GIA ĐÌNH
-- A: 我可以问你一个问题吗？ (Wǒ kěyǐ wèn nǐ yí gè wèntí ma?) - Tôi có thể hỏi bạn một câu không?
-  > Giải thích: Muốn hỏi có / không, Câu hỏi chính phản. Có 吗 (ma ) ở cuối câu.
-- B: 可以。 (Kěyǐ.) - Được.
-- A: 你家有几口人？ (Nǐ jiā yǒu jǐ kǒu rén?) - Gia đình bạn có mấy người?
-  > Giải thích: Câu hỏi số lượng thành viên trong gia đình chuẩn.
-- B: 我家有四口人。 (Wǒ jiā yǒu sì kǒu rén.) - Gia đình tôi có 4 người.
-  > Giải thích: Câu trả lời số lượng thành viên gia đình.
-- A: 你有兄弟姐妹吗？ (Nǐ yǒu xiōngdì jiěmèi ma?) - Bạn có anh chị em không?
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-- B: 有，我有一个弟弟。 (Yǒu, wǒ yǒu yí gè dìdi.) - Có, tôi có một em trai.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-
----
-
-## 05. LUYỆN TẬP
-
-*(Ghi chú từ vựng ngành nghề / nhân sự: 程序员 chéngxùyuán: lập trình viên | 行政职员 xíngzhèng zhíyuán: nhân viên hành chính | 人员 rényuán: nhân viên | 服务员 fúwùyuán: phục vụ | 老婆 lǎopo: vợ | 老公 lǎogōng: chồng)*
-
-### 💥 Bài đọc luyện tập:
-
----
-
-### BÀI 1: CHỌN ĐÁP ÁN ĐÚNG (A / B)
-
-1. **Hỏi tên lịch sự**
-   - A. 您叫什么名字？ (Nín jiào shénme míngzi?)
-   - B. 你叫什么？ (Nǐ jiào shénme?)
-   *(Đáp án đúng: A)*
-
-2. **“Tôi là người Việt Nam”**
-   - A. 我住在越南。 (Wǒ zhù zài Yuènán.)
-   - B. 我是越南人。 (Wǒ shì Yuènán rén.)
-   *(Đáp án đúng: B)*
-
-3. **Hỏi gia đình có mấy người**
-   - A. 你家有几口人？ (Nǐ jiā yǒu jǐ kǒu rén?)
-   - B. 你在哪儿？ (Nǐ zài nǎr?)
-   *(Đáp án đúng: A)*
-
-4. **“Tôi là học sinh”**
-   - A. 我是学生。 (Wǒ shì xuéshēng.)
-   - B. 我在学生。 (Wǒ zài xuéshēng.)
-   *(Đáp án đúng: A)*
-
-5. **“Tôi 30 tuổi”**
-   - A. 我三十岁。 (Wǒ sānshí suì.)
-   - B. 我有三十岁。 (Wǒ yǒu sānshí suì.)
-   *(Đáp án đúng: A)*
-
----
-
-### BÀI 2: NỐI CÂU HỎI – CÂU TRẢ LỜI
-
-| Câu hỏi | Câu trả lời tương ứng |
-|---|---|
-| 1. 你叫什么名字？ (Nǐ jiào shénme míngzi?) | b. 我叫安。 (Wǒ jiào Ān.) |
-| 2. 你今年多大？ (Nǐ jīnnián duō dà?) | a. 我二十五岁。 (Wǒ èrshíwǔ suì.) |
-| 3. 你是哪国人？ (Nǐ shì nǎ guó rén?) | c. 我是越南人。 (Wǒ shì Yuènán rén.) |
-| 4. 你是学生吗？ (Nǐ shì xuéshēng ma?) | d. 是的，我是学生。 (Shì de, wǒ shì xuéshēng.) |
-| 5. 你家有几口人？ (Nǐ jiā yǒu jǐ kǒu rén?) | e. 我家有四口人。 (Wǒ jiā yǒu sì kǒu rén.) |
-
----
-
-### BÀI 3: TỰ GIỚI THIỆU (LUYỆN NÓI)
-
-Nói theo mẫu (thay đổi thông tin của bạn):
-
-- 我介绍一下。 (Wǒ jièshào yíxià.) - Tôi xin giới thiệu một chút.
-- 我叫 __。 (Wǒ jiào __.) - Tôi tên là __.
-- 我今年 __ 岁。 (Wǒ jīnnián __ suì.) - Năm nay tôi __ tuổi.
-  > Giải thích: Trả lời tuổi: S + [Số tuổi] + 岁 (suì)
-- 我是 __ 人。 (Wǒ shì __ rén.) - Tôi là người __.
-  > Giải thích: Cấu trúc trả lời quốc tịch: "我 + 是 + [Tên nước] + 人".
-- 我是 __。 (Wǒ shì __.) - Tôi là __ (nghề nghiệp).
-- 我家有 __ 口人。 (Wǒ jiā yǒu __ kǒu rén.) - Nhà tôi có __ người.
-  > Giải thích: 有 (yǒu) / 没有  (méi yǒu) – CÓ / KHÔNG CÓ
-
-*(Ghi chú thêm: 老婆 lǎopo: vợ | 女儿 nǚ'ér: con gái | 儿子 érzi: con trai)*
-
----
-
-**谢谢大家关注 - CẢM ƠN MỌI NGƯỜI ĐÃ THEO DÕI**
+## I. TỪ VỰNG
+
+| GUID | Tiếng Trung | Phiên Âm | Nghĩa | Diễn giải cách nhớ |
+|---|---|---|---|---|
+| 3f2504e0-4f89-11d3-9a0c-0305e82c3301 | 是 | shì | là | Âm shì diễn tả sự khẳng định, xác nhận một điều gì đó là đúng/sự thật. |
+| 8a7c2e3a-4b5c-6d7e-8f9a-0b1c2d3e4f5g | 不 | bù | không | Âm bù mang nghĩa phủ định, dùng để phủ nhận một hành động hoặc trạng thái. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 吗 | ma | không? (trợ từ câu hỏi) | Âm ma đặt cuối câu để biến câu trần thuật thành câu hỏi có/không. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 也 | yě | cũng | Âm yě diễn tả sự bổ sung, thêm vào, tương tự như "cũng vậy". |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 有 | yǒu | có | Âm yǒu diễn tả sự tồn tại, sở hữu một thứ gì đó. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 怎么 | zěnme | thế nào / làm sao / như thế nào | Ghép từ zěn (thế nào) và me (trợ từ) -> dùng để hỏi về cách thức hoặc lý do. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 会 | huì | biết, có thể | Âm huì diễn tả khả năng, năng lực làm được việc gì đó. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 在 | zài | ở, đang | Âm zài diễn tả vị trí, nơi chốn hoặc trạng thái đang diễn ra. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 来 | lái | đến | Âm lái diễn tả sự di chuyển từ nơi khác đến một địa điểm. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 从 | cóng | từ | Âm cóng diễn tả điểm xuất phát, bắt đầu từ đâu đó. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 到 | dào | đến | Âm dào diễn tả điểm kết thúc, đạt tới một nơi hoặc một mốc thời gian. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 昨天 | zuótiān | hôm qua | Ghép từ zuó (ngày trước) và tiān (ngày) -> ngày trước ngày hôm nay. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 明天 | míngtiān | ngày mai | Ghép từ míng (sáng sủa/rõ ràng) và tiān (ngày) -> bắt đầu một ngày mới sáng sủa. |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 今天 | jīntiān | hôm nay | Ghép từ jīn (hiện tại/bây giờ) và tiān (ngày) -> ngày hiện tại. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 哪儿 | nǎr | ở đâu | Âm nǎr diễn tả câu hỏi về địa điểm, nơi chốn. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 现在 | xiànzài | bây giờ, hiện tại | Ghép từ xiàn (hiện tại) và zài (đang) -> thời điểm đang diễn ra. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 这 | zhè | đây, này | Âm zhè dùng để chỉ vật/người ở gần người nói. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 那 | nà | kia, đó | Âm nà dùng để chỉ vật/người ở xa người nói. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 人 | rén | người | Âm rén diễn tả con người, người. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 中国 | Zhōngguó | Trung Quốc | Ghép từ Zhōng (trung tâm/giữa) và guó (nước) -> đất nước ở trung tâm. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 越南 | Yuènán | Việt Nam | Ghép từ Yuè (vượt qua) và nán (phía nam) -> đất nước ở phía nam. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 汉语 | Hànyǔ | tiếng Trung | Ghép từ Hàn (người Hán) và yǔ (ngôn ngữ) -> ngôn ngữ của người Hán. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 工作 | gōngzuò | công việc, làm việc | Ghép từ gōng (công việc) và zuò (làm) -> làm công việc. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 学习 | xuéxí | học tập | Ghép từ xué (học) và xí (tập luyện) -> quá trình học và rèn luyện. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 学生 | xuéshēng | học sinh | Ghép từ xué (học) và shēng (người) -> người đi học. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 老师 | lǎoshī | giáo viên | Ghép từ lǎo (già/kinh nghiệm) và shī (thầy) -> người thầy có kinh nghiệm. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 公司 | gōngsī | công ty | Ghép từ gōng (công) và sī (tư) -> tổ chức kinh doanh. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 说 | shuō | nói | Âm shuō diễn tả hành động phát ra lời nói. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 一点 | yìdiǎn | một chút | Ghép từ yì (một) và diǎn (chút/điểm) -> một lượng nhỏ. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 美国 | Měiguó | Mỹ | Ghép từ Měi (đẹp) và guó (nước) -> đất nước xinh đẹp. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 德国 | Déguó | Đức | Ghép từ Dé (đức hạnh) và guó (nước) -> đất nước của đức hạnh. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 日本 | Rìběn | Nhật Bản | Ghép từ Rì (mặt trời) và běn (gốc) -> xứ sở mặt trời mọc. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 柬埔寨 | Jiǎnpǔzhài | Campuchia | Ghép từ Jiǎn (đơn giản) + pǔ (phổ biến) + zhài (trại) -> tên gọi đất nước Campuchia. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 书 | shū | sách | Âm shū diễn tả sách, tài liệu để đọc. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 名字 | míngzi | tên | Ghép từ míng (tên) và zi (trợ từ) -> tên gọi của một người. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 叫 | jiào | gọi, tên là | Âm jiào diễn tả hành động gọi tên hoặc được gọi là gì. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 什么 | shénme | gì, cái gì | Ghép từ shén (cái gì) và me (trợ từ) -> dùng để hỏi về sự vật, sự việc. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 您 | nín | anh/chị (lịch sự) | Âm nín là dạng kính ngữ của nǐ (bạn), dùng để thể hiện sự tôn trọng. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 请问 | qǐngwèn | xin hỏi | Ghép từ qǐng (xin mời) và wèn (hỏi) -> lời mở đầu lịch sự trước khi hỏi. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 贵姓 | guì xìng | quý danh (hỏi họ lịch sự) | Ghép từ guì (quý) và xìng (họ) -> cách hỏi họ rất lịch sự. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 姓 | xìng | họ | Âm xìng diễn tả họ của một người. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 岁 | suì | tuổi | Âm suì dùng để đếm tuổi của con người. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 几 | jǐ | mấy (số nhỏ) | Âm jǐ dùng để hỏi số lượng nhỏ (thường dưới 10). |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 多 | duō | bao nhiêu | Âm duō diễn tả số lượng nhiều, dùng trong câu hỏi về số lượng. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 大 | dà | lớn | Âm dà diễn tả kích thước lớn, to. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 年纪 | niánjì | tuổi (người lớn tuổi) | Ghép từ nián (năm) và jì (kỷ) -> số năm đã sống, dùng cho người lớn tuổi. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 哪 | nǎ | nào | Âm nǎ dùng để hỏi lựa chọn giữa nhiều đối tượng. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 国 | guó | nước | Âm guó diễn tả đất nước, quốc gia. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 住 | zhù | sống, ở | Âm zhù diễn tả hành động cư trú, sinh sống tại một nơi. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 还是 | háishì | hay là | Ghép từ hái (vẫn còn) và shì (là) -> dùng trong câu hỏi lựa chọn. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 家 | jiā | gia đình, nhà | Âm jiā diễn tả gia đình, tổ ấm, nơi sinh sống. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 口 | kǒu | miệng (lượng từ đếm người trong gia đình) | Âm kǒu nghĩa gốc là miệng, dùng làm lượng từ đếm số thành viên gia đình. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 爸爸 | bàba | bố, ba | Âm bàba lặp lại diễn tả người cha trong gia đình. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 妈妈 | māma | mẹ, má | Âm māma lặp lại diễn tả người mẹ trong gia đình. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 弟弟 | dìdi | em trai | Âm dìdi lặp lại diễn tả em trai trong gia đình. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 哥哥 | gēge | anh trai | Âm gēge lặp lại diễn tả anh trai trong gia đình. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 姐姐 | jiějie | chị gái | Âm jiějie lặp lại diễn tả chị gái trong gia đình. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 妹妹 | mèimei | em gái | Âm mèimei lặp lại diễn tả em gái trong gia đình. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 老公 | lǎogōng | chồng (khẩu ngữ) | Ghép từ lǎo (già/thân mật) và gōng (công) -> người chồng thân mật. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 老婆 | lǎopó | vợ (khẩu ngữ) | Ghép từ lǎo (già/thân mật) và pó (bà) -> người vợ thân mật. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 爷爷 | yéye | ông nội | Âm yéye lặp lại diễn tả ông nội trong gia đình. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 奶奶 | nǎinai | bà nội | Âm nǎinai lặp lại diễn tả bà nội trong gia đình. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 女儿 | nǚ'ér | con gái | Ghép từ nǚ (nữ/giới tính nữ) và ér (con) -> con có giới tính nữ. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 儿子 | érzi | con trai | Ghép từ ér (con) và zi (trợ từ) -> con trai. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 介绍 | jièshào | giới thiệu | Ghép từ jiè (giới) và shào (thiệu) -> trình bày, giới thiệu về ai/cái gì. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 一下 | yíxià | một chút (sau động từ) | Ghép từ yí (một) và xià (lần) -> làm một lần, một chút. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 今年 | jīnnián | năm nay | Ghép từ jīn (hiện tại) và nián (năm) -> năm hiện tại. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 高兴 | gāoxìng | vui mừng | Ghép từ gāo (cao) và xìng (hứng thú) -> cảm xúc phấn khởi, vui vẻ. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 认识 | rènshi | quen biết, làm quen | Ghép từ rèn (nhận) và shi (biết) -> nhận biết và quen biết ai đó. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 做 | zuò | làm | Âm zuò diễn tả hành động làm việc gì đó. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 学校 | xuéxiào | trường học | Ghép từ xué (học) và xiào (trường) -> nơi học tập. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 可以 | kěyǐ | có thể, được | Ghép từ kě (có thể) và yǐ (dùng để) -> diễn tả sự cho phép hoặc khả năng. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 问 | wèn | hỏi | Âm wèn diễn tả hành động đặt câu hỏi. |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 个 | gè | cái (lượng từ phổ biến) | Âm gè là lượng từ phổ biến nhất, dùng cho nhiều danh từ. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 问题 | wèntí | vấn đề, câu hỏi | Ghép từ wèn (hỏi) và tí (đề) -> điều cần hỏi, vấn đề cần giải quyết. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 兄弟姐妹 | xiōngdì jiěmèi | anh chị em | Ghép từ xiōng (anh) + dì (em trai) + jiě (chị) + mèi (em gái) -> tất cả anh chị em trong gia đình. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 好 | hǎo | tốt, khỏe | Âm hǎo diễn tả trạng thái tốt, khỏe mạnh, ổn. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 的 | de | của (trợ từ sở hữu) | Âm de là trợ từ kết nối, diễn tả quan hệ sở hữu hoặc bổ nghĩa. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 很 | hěn | rất | Âm hěn diễn tả mức độ cao, rất. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 七 | qī | bảy | Âm qī là số bảy. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 二十五 | èrshíwǔ | hai mươi lăm | Ghép từ èr (hai) + shí (mười) + wǔ (năm) -> hai mươi lăm. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 六十 | liùshí | sáu mươi | Ghép từ liù (sáu) + shí (mười) -> sáu mươi. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 四 | sì | bốn | Âm sì là số bốn. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 三十 | sānshí | ba mươi | Ghép từ sān (ba) + shí (mười) -> ba mươi. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 程序员 | chéngxùyuán | lập trình viên | Ghép từ chéngxù (chương trình) và yuán (nhân viên) -> người làm chương trình. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 行政 | xíngzhèng | hành chính | Ghép từ xíng (thi hành) và zhèng (chính sách) -> công việc hành chính. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 职员 | zhíyuán | nhân viên | Ghép từ zhí (chức vụ) và yuán (nhân viên) -> người giữ chức vụ trong công ty. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 人员 | rényuán | nhân sự | Ghép từ rén (người) và yuán (nhân viên) -> đội ngũ nhân sự. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 服务员 | fúwùyuán | nhân viên phục vụ | Ghép từ fúwù (phục vụ) và yuán (nhân viên) -> người làm công việc phục vụ. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 大学 | dàxué | đại học | Ghép từ dà (lớn) và xué (học) -> trường học lớn, bậc đại học. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 每天 | měitiān | mỗi ngày | Ghép từ měi (mỗi) và tiān (ngày) -> mỗi ngày. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 早上 | zǎoshang | buổi sáng | Ghép từ zǎo (sớm) và shang (trên) -> thời điểm buổi sáng sớm. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 点 | diǎn | giờ | Âm diǎn dùng để chỉ số giờ trong ngày. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 起床 | qǐchuáng | thức dậy | Ghép từ qǐ (đứng dậy) và chuáng (giường) -> đứng dậy khỏi giường. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 半 | bàn | nửa, rưỡi | Âm bàn diễn tả một nửa, dùng để chỉ nửa giờ. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 吃 | chī | ăn | Âm chī diễn tả hành động ăn. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 早饭 | zǎofàn | bữa sáng | Ghép từ zǎo (sớm) và fàn (cơm) -> bữa ăn buổi sáng. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 去 | qù | đi | Âm qù diễn tả hành động đi đến một nơi nào đó. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 上课 | shàngkè | lên lớp, học | Ghép từ shàng (lên) và kè (bài học) -> lên lớp học. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 喜欢 | xǐhuan | thích | Ghép từ âm xǐ (vui mừng) và huan (vui vẻ/hài lòng) -> cảm thấy vui mừng và hài lòng với ai đó/cái gì đó. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 看 | kàn | xem, đọc | Âm kàn diễn tả hành động nhìn, xem, đọc. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 中午 | zhōngwǔ | buổi trưa | Ghép từ zhōng (giữa) và wǔ (trưa) -> gi

@@ -1,7 +1,6 @@
-import { useState, useEffect, useMemo, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import './index.css'
 import { MarkdownParser } from './services/MarkdownParser'
-import { AiGeneratorService } from './services/AiGeneratorService'
 import { ProgressService } from './services/ProgressService'
 import { SpeechRecognitionService } from './services/SpeechRecognitionService'
 import { AudioVisualizer } from './components/AudioVisualizer'
@@ -9,6 +8,16 @@ import { pinyin } from 'pinyin-pro'
 
 const progressService = new ProgressService();
 const speechService = new SpeechRecognitionService();
+
+// Helper to normalize pinyin for comparison (giữ nguyên dấu thanh, bỏ hoa/thường, khoảng trắng và dấu câu)
+function normalizePinyin(str) {
+  if (!str) return '';
+  return str
+    .toLowerCase()
+    .normalize('NFC')              // Chuẩn hoá unicode dạng tổ hợp/dựng sẵn đồng nhất
+    .replace(/[\s\-_,.'`"!?/\\;:]/g, '') // Bỏ khoảng cách và các ký tự phân tách/dấu câu
+    .trim();
+}
 
 function App() {
   const [currentView, setCurrentView] = useState('Vocab');
@@ -25,36 +34,29 @@ function App() {
   const [isListeningMode, setIsListeningMode] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
 
+  // --- Vocab Practice Mode (MultipleChoice vs WritePinyin) ---
+  const [vocabPracticeMode, setVocabPracticeMode] = useState('MultipleChoice'); // 'MultipleChoice' | 'WritePinyin'
+  const [pinyinInputText, setPinyinInputText] = useState('');
+  const [pinyinStatus, setPinyinStatus] = useState(null); // 'correct' | 'wrong' | null
+  const pinyinInputRef = useRef(null);
+
   // --- Match State ---
   const [sentenceList, setSentenceList] = useState([]);
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
   const [matchDirection, setMatchDirection] = useState('Trung -> Việt'); // 'Trung -> Việt' or 'Việt -> Trung'
   
-  // --- Refs ---
+  // --- Refs & State ---
   const transcriptRef = useRef('');
   const [availablePieces, setAvailablePieces] = useState([]);
   const [selectedPieces, setSelectedPieces] = useState([]);
   const [sentenceFeedback, setSentenceFeedback] = useState('');
 
-  // --- AI State ---
-  const [aiInput, setAiInput] = useState('');
-  const [isGenerating, setIsGenerating] = useState(false);
-
-  // === AI STATE ===
-  const [showChat, setShowChat] = useState(false);
-  const [chatMessages, setChatMessages] = useState([{role: 'ai', text: 'Chào bạn, tôi là trợ lý AI. Bạn có câu hỏi nào về ngữ pháp bài học này không?'}]);
-  const [chatInput, setChatInput] = useState('');
-  const [isChatLoading, setIsChatLoading] = useState(false);
-  const [isGeneratingSentences, setIsGeneratingSentences] = useState(false);
-
   // === VIEW STATES ===
   const [vocabDirection, setVocabDirection] = useState('Trung -> Việt');
 
-  // === NEW UPGRADE STATES ===
+  // === COMBO STATES ===
   const [combo, setCombo] = useState(0);
   const [showComboAnim, setShowComboAnim] = useState(false);
-  const [aiExplainText, setAiExplainText] = useState('');
-  const [isAiExplaining, setIsAiExplaining] = useState(false);
 
   // --- Analysis State ---
   const [showAnalysis, setShowAnalysis] = useState(false);
@@ -103,7 +105,6 @@ function App() {
   }, []);
 
   const initAudioEngine = () => {
-    // Left for explicit calls if needed, but mostly handled by global click
     if (!window.audioEngineInitialized && 'speechSynthesis' in window) {
       window.speechSynthesis.cancel();
       const preloadMsg = new SpeechSynthesisUtterance('');
@@ -146,7 +147,6 @@ function App() {
   }, [selectedLesson]);
 
   // When Sentence index or direction changes, rebuild pieces
-  // When Sentence index or direction changes, rebuild pieces
   const lastPreparedSentenceRef = useRef(null);
   const lastMatchDirectionRef = useRef(null);
   const lastSentenceIndexRef = useRef(null);
@@ -169,10 +169,16 @@ function App() {
   // ===== VOCAB LOGIC =====
   const currentVocab = vocabList[currentVocabIndex];
 
-  const generateVocabOptions = (correctV, allV) => {
+  const resetVocabQuestionState = () => {
     setIsMeaningVisible(false);
     setVocabFeedback('');
     setIsVocabCorrect(false);
+    setPinyinInputText('');
+    setPinyinStatus(null);
+  };
+
+  const generateVocabOptions = (correctV, allV) => {
+    resetVocabQuestionState();
     
     let options;
     if (vocabDirection === 'Trung -> Việt') {
@@ -213,7 +219,14 @@ function App() {
     if (vocabList.length > 0) {
       generateVocabOptions(vocabList[currentVocabIndex], vocabList);
     }
-  }, [currentVocabIndex, vocabList, vocabDirection]);
+  }, [currentVocabIndex, vocabList, vocabDirection, vocabPracticeMode]);
+
+  // Focus input when switching to WritePinyin mode or changing index
+  useEffect(() => {
+    if (vocabPracticeMode === 'WritePinyin' && currentView === 'Vocab') {
+      setTimeout(() => pinyinInputRef.current?.focus(), 100);
+    }
+  }, [vocabPracticeMode, currentVocabIndex, currentView]);
 
   // Trigger speech when listening mode is toggled manually
   useEffect(() => {
@@ -253,6 +266,45 @@ function App() {
     }
   };
 
+  // Check Pinyin input
+  const handleCheckPinyin = () => {
+    if (!currentVocab || !pinyinInputText.trim()) return;
+
+    const inputNorm = normalizePinyin(pinyinInputText);
+    const targetNorm = normalizePinyin(currentVocab.Pinyin);
+    // Also support generated pinyin from Chinese
+    const autoPinyinNorm = normalizePinyin(pinyin(currentVocab.Chinese));
+
+    const isCorrect = (inputNorm === targetNorm) || (inputNorm === autoPinyinNorm);
+
+    if (isCorrect) {
+      setPinyinStatus('correct');
+      setVocabFeedback('Chính xác! 🎉');
+      setIsVocabCorrect(true);
+      setIsMeaningVisible(true);
+      progressService.updateProgress(currentVocab.Chinese, true);
+      handleSpeak(currentVocab.Chinese);
+
+      setCombo(c => c + 1);
+      setShowComboAnim(true);
+      setTimeout(() => setShowComboAnim(false), 1000);
+
+      setTimeout(() => {
+        if (currentVocabIndex < vocabList.length - 1) {
+          setCurrentVocabIndex(currentVocabIndex + 1);
+        } else {
+          setVocabFeedback('Hoàn thành bài học từ vựng!');
+        }
+      }, 1500);
+    } else {
+      setPinyinStatus('wrong');
+      setVocabFeedback(`Chưa đúng! Đáp án gợi ý: ${currentVocab.Pinyin}`);
+      setIsVocabCorrect(false);
+      progressService.updateProgress(currentVocab.Chinese, false);
+      setCombo(0);
+    }
+  };
+
   const setFeedback = (msg) => {
     if (currentView === 'Vocab') setVocabFeedback(msg);
     else setSentenceFeedback(msg);
@@ -262,18 +314,16 @@ function App() {
     const targetText = currentView === 'Vocab' ? currentVocab.Chinese : currentSentence.Chinese;
     
     if (isRecording) {
-      // BẤM STOP KẾT THÚC GHI ÂM VÀ CHỜ KẾT QUẢ
       speechService.stopRecording();
       setIsRecording(false);
       setFeedback('⏳ Đang xử lý kết quả...');
     } else {
-      // BẮT ĐẦU GHI ÂM
       transcriptRef.current = '';
       setIsRecording(true);
       setFeedback('🎤 Đang ghi âm... (Bấm Stop ⏹️ để kết thúc và xem kết quả)');
       speechService.startRecording(
         (transcript) => {
-          transcriptRef.current = transcript; // Chỉ lưu tạm dữ liệu, không so sánh ngay
+          transcriptRef.current = transcript;
         },
         (error) => {
           setIsRecording(false);
@@ -287,10 +337,9 @@ function App() {
           }
         },
         () => {
-          // ON END: Bây giờ transcript mới chứa toàn bộ dữ liệu cuối cùng
           setIsRecording(false);
           const transcript = transcriptRef.current;
-          const cleanInput = transcript.replace(/[^\u4e00-\u9fa5]/g, ''); // Extract only chinese
+          const cleanInput = transcript.replace(/[^\u4e00-\u9fa5]/g, '');
           
           if (cleanInput === targetText) {
             setFeedback(`Chính xác! (Bạn đọc: ${cleanInput})`);
@@ -311,9 +360,8 @@ function App() {
   const handleSpeak = (text, rate = 1.0) => {
     initAudioEngine();
     if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel(); // Important: clear stuck queues before speaking
+      window.speechSynthesis.cancel();
       
-      // Delay speak to prevent Chrome from dropping the call immediately after cancel
       setTimeout(() => {
         const msg = new SpeechSynthesisUtterance(text);
         msg.lang = 'zh-CN';
@@ -343,7 +391,6 @@ function App() {
       const words = sentence.Vietnamese.split(' ').filter(w => w.trim() !== '');
       pieces = words.map((w, i) => ({ id: i, text: w }));
     } else {
-      // Split chinese into characters ignoring punctuation
       const cleanChinese = sentence.Chinese.replace(/[^\u4e00-\u9fa5]/g, '');
       for (let i = 0; i < cleanChinese.length; i++) {
         pieces.push({ id: i, text: cleanChinese[i] });
@@ -381,15 +428,11 @@ function App() {
       setCombo(c => c + 1);
       setShowComboAnim(true);
       setTimeout(() => setShowComboAnim(false), 1000);
-      setAiExplainText(''); // Clear explanation
     } else {
       setSentenceFeedback('Sai rồi! (Câu này sẽ được lặp lại)');
       progressService.updateProgress('SEN_' + currentSentence.Chinese, false);
       setCombo(0);
-      setAiExplainText('');
-      // Tự động gọi AI giải thích
-      handleAskAIExplanation();
-      // Append the sentence to the end of the list so they encounter it again
+      // Append sentence to repeat
       setSentenceList(prev => [...prev, currentSentence]);
     }
   };
@@ -402,11 +445,9 @@ function App() {
     
     const currentText = selectedPieces.map(p => p.text).join('');
     
-    // Tìm phần còn thiếu
     if (targetText.startsWith(currentText)) {
       const remainingTarget = targetText.substring(currentText.length);
       if (remainingTarget.length > 0) {
-        // Tìm piece phù hợp trong availablePieces
         const nextPiece = availablePieces.find(p => remainingTarget.startsWith(p.text));
         if (nextPiece) {
            selectPiece(nextPiece);
@@ -417,31 +458,12 @@ function App() {
     setSentenceFeedback('Gợi ý: Hãy gỡ các mảnh sai ra trước!');
   };
 
-  const handleAskAIExplanation = async () => {
-    if (!currentSentence) return;
-    const currentText = selectedPieces.map(p => p.text).join(' ');
-    const targetText = matchDirection === 'Trung -> Việt' ? currentSentence.Vietnamese : currentSentence.Chinese;
-    
-    setIsAiExplaining(true);
-    setAiExplainText('');
-    try {
-      const aiService = new AiGeneratorService();
-      const prompt = `Trong bài học tiếng Trung, tôi phải xếp câu thành "${targetText}". Nhưng tôi lại xếp thành "${currentText}". Hãy giải thích ngắn gọn bằng tiếng Việt vì sao tôi sai (chỉ ra lỗi sai ngữ pháp, vị trí từ...). Không dài dòng.`;
-      const explain = await aiService.chat(prompt);
-      setAiExplainText(explain);
-    } catch(err) {
-      setAiExplainText('Không thể gọi AI: ' + err.message);
-    } finally {
-      setIsAiExplaining(false);
-    }
-  };
-
   // === KEYBOARD SHORTCUTS ===
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
 
-      if (currentView === 'Vocab' && vocabOptions.length > 0 && !isMeaningVisible) {
+      if (currentView === 'Vocab' && vocabPracticeMode === 'MultipleChoice' && vocabOptions.length > 0 && !isMeaningVisible) {
          if (e.key >= '1' && e.key <= '9') {
             const index = parseInt(e.key) - 1;
             if (vocabOptions[index]) {
@@ -459,7 +481,7 @@ function App() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentView, vocabOptions, isMeaningVisible, selectedPieces, matchDirection, currentSentence]);
+  }, [currentView, vocabPracticeMode, vocabOptions, isMeaningVisible, selectedPieces, matchDirection, currentSentence]);
 
   const nextSentence = () => {
     if (currentSentenceIndex < sentenceList.length - 1) {
@@ -470,79 +492,6 @@ function App() {
   const prevSentence = () => {
     if (currentSentenceIndex > 0) {
       setCurrentSentenceIndex(currentSentenceIndex - 1);
-    }
-  };
-
-  // ===== AI IMPORT =====
-  const handleGenerateAI = async () => {
-    if (!aiInput.trim()) return;
-    setIsGenerating(true);
-    try {
-      const aiService = new AiGeneratorService();
-      const markdown = await aiService.generateMarkdownFromPdfText(aiInput, "Bài học AI");
-      const parser = new MarkdownParser();
-      const newLesson = parser.parseContent(markdown);
-      setLessons([...lessons, newLesson]);
-      setSelectedLesson(newLesson);
-      setAiInput('');
-      setCurrentView('Vocab');
-    } catch (err) {
-      alert("Lỗi: " + err.message);
-    } finally {
-      setIsGenerating(false);
-    }
-  };
-
-  const handleGenerateMoreSentences = async () => {
-    if (!selectedLesson) return;
-    setIsGeneratingSentences(true);
-    try {
-      const aiService = new AiGeneratorService();
-      const allVocabs = [];
-      const currentIndex = lessons.findIndex(l => l.Title === selectedLesson.Title);
-      const startIndex = Math.max(0, currentIndex - 1);
-      for (let i = startIndex; i <= currentIndex; i++) {
-         if (lessons[i]?.Vocabularies) {
-             allVocabs.push(...lessons[i].Vocabularies.map(v => v.Chinese));
-         }
-      }
-      const vocabs = Array.from(new Set(allVocabs));
-      const grammars = Array.from(new Set(selectedLesson.Sentences?.map(s => s.GrammarContext).filter(Boolean)));
-      const count = Math.max(5, grammars.length + 2);
-      
-      const markdown = await aiService.generateAdditionalSentences(vocabs, grammars.length > 0 ? grammars : ["Các mẫu câu giao tiếp cơ bản"], count);
-      
-      const parser = new MarkdownParser();
-      const parsedData = parser.parseContent(markdown);
-      
-      if (parsedData.Sentences && parsedData.Sentences.length > 0) {
-         setSentenceList([...sentenceList, ...parsedData.Sentences]);
-         alert(`Đã tạo thành công ${parsedData.Sentences.length} câu mới!`);
-      } else {
-         alert("AI không trả về đúng định dạng, vui lòng thử lại.");
-      }
-    } catch(err) {
-      alert(err.message);
-    } finally {
-      setIsGeneratingSentences(false);
-    }
-  };
-
-  const handleSendChat = async () => {
-    if (!chatInput.trim()) return;
-    const msg = chatInput.trim();
-    setChatInput('');
-    const newMsgs = [...chatMessages, { role: 'user', text: msg }];
-    setChatMessages(newMsgs);
-    setIsChatLoading(true);
-    try {
-      const aiService = new AiGeneratorService();
-      const response = await aiService.chat(msg);
-      setChatMessages([...newMsgs, { role: 'ai', text: response }]);
-    } catch(err) {
-      setChatMessages([...newMsgs, { role: 'ai', text: `Lỗi: ${err.message}` }]);
-    } finally {
-      setIsChatLoading(false);
     }
   };
 
@@ -561,7 +510,6 @@ function App() {
     
     let list = currentView === 'Vocab' ? [...vocabList] : [...sentenceList];
     
-    // Lấy dữ liệu mới nhất từ LocalStorage (vì state có thể chưa cập nhật)
     list = list.map(item => {
       const key = currentView === 'Vocab' ? item.Chinese : ('SEN_' + item.Chinese);
       const prog = progressService.getProgress(key);
@@ -611,7 +559,6 @@ function App() {
   return (
     <div className="app-container">
 
-
       {/* LEFT SIDEBAR */}
       <div className="sidebar">
         <div className="sidebar-title">Đường Tới HSK</div>
@@ -644,8 +591,6 @@ function App() {
           🧩 Ghép / Dịch Câu
         </button>
 
-
-
         <div className="sidebar-label">CÀI ĐẶT</div>
         <button className="sidebar-btn sidebar-btn-danger" onClick={handleResetData}>
           🔄 Xóa dữ liệu học
@@ -660,25 +605,46 @@ function App() {
           <div>
             <div className="view-header">
               <div className="view-title">Học Từ Vựng</div>
-              <div style={{display: 'flex', alignItems: 'center', gap: '15px'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '15px', flexWrap: 'wrap'}}>
+                {/* Practice Mode Toggle */}
+                <div className="practice-mode-toggle">
+                  <button 
+                    className={`mode-toggle-btn ${vocabPracticeMode === 'MultipleChoice' ? 'active' : ''}`}
+                    onClick={() => setVocabPracticeMode('MultipleChoice')}
+                  >
+                    🔘 Trắc nghiệm
+                  </button>
+                  <button 
+                    className={`mode-toggle-btn ${vocabPracticeMode === 'WritePinyin' ? 'active' : ''}`}
+                    onClick={() => setVocabPracticeMode('WritePinyin')}
+                  >
+                    ⌨️ Viết Pinyin
+                  </button>
+                </div>
+
                 <label style={{cursor: 'pointer', fontWeight: 'bold'}}>
                   <input type="checkbox" checked={isListeningMode} onChange={(e) => setIsListeningMode(e.target.checked)} style={{marginRight: '8px'}} />
                   🎧 Luyện Nghe
                 </label>
                 <button className="btn-generate" style={{padding: '10px 20px'}} onClick={openAnalysis}>📊 Phân Tích</button>
-                <select className="sidebar-select" style={{marginBottom: 0, minWidth: '150px'}} value={vocabDirection} onChange={(e) => setVocabDirection(e.target.value)}>
-                  <option value="Trung -> Việt">Trung {'>'} Việt</option>
-                  <option value="Việt -> Trung">Việt {'>'} Trung</option>
-                </select>
+                
+                {vocabPracticeMode === 'MultipleChoice' && (
+                  <select className="sidebar-select" style={{marginBottom: 0, minWidth: '150px'}} value={vocabDirection} onChange={(e) => setVocabDirection(e.target.value)}>
+                    <option value="Trung -> Việt">Trung {'>'} Việt</option>
+                    <option value="Việt -> Trung">Việt {'>'} Trung</option>
+                  </select>
+                )}
               </div>
             </div>
 
             <div className="flashcard">
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div className="vocab-chinese" style={{ visibility: isVocabRevealed ? 'visible' : 'hidden' }}>
-                  {vocabDirection === 'Trung -> Việt' ? currentVocab.Chinese : currentVocab.Meaning}
+                  {vocabPracticeMode === 'WritePinyin' 
+                    ? currentVocab.Chinese 
+                    : (vocabDirection === 'Trung -> Việt' ? currentVocab.Chinese : currentVocab.Meaning)}
                 </div>
-                {vocabDirection === 'Trung -> Việt' && (
+                {(vocabPracticeMode === 'WritePinyin' || vocabDirection === 'Trung -> Việt') && (
                   <>
                     <button onClick={() => handleSpeak(currentVocab.Chinese)} style={{ background:'transparent', border:'none', fontSize:'40px', cursor:'pointer', marginLeft:'20px' }}>
                       🔊
@@ -690,9 +656,25 @@ function App() {
                   </>
                 )}
               </div>
-              {vocabDirection === 'Trung -> Việt' && (
+
+              {/* Show Pinyin only when answered or in multiple-choice revealed state */}
+              {(isMeaningVisible || vocabPracticeMode !== 'WritePinyin') && (
                 <div className="vocab-pinyin" style={{ visibility: isVocabRevealed ? 'visible' : 'hidden' }}>
                   {currentVocab.Pinyin}
+                </div>
+              )}
+
+              {/* Show Meaning in Pinyin mode when revealed */}
+              {vocabPracticeMode === 'WritePinyin' && isMeaningVisible && (
+                <div className="vocab-meaning">
+                  {currentVocab.Meaning}
+                </div>
+              )}
+
+              {/* Diễn giải cách nhớ / Memory Hint */}
+              {isMeaningVisible && currentVocab.MemoryHint && (
+                <div className="memory-hint">
+                  💡 <strong>Cách nhớ:</strong> {currentVocab.MemoryHint}
                 </div>
               )}
               
@@ -721,40 +703,76 @@ function App() {
               {vocabFeedback}
             </div>
 
-            <div className="options-grid">
-              {vocabOptions.map((opt, idx) => {
-                const isCorrectOption = vocabDirection === 'Trung -> Việt' 
-                  ? opt === currentVocab.Meaning
-                  : opt === currentVocab.Chinese;
-                
-                let optionStyle = {};
-                if (isMeaningVisible) {
-                  if (isCorrectOption) {
-                    optionStyle = { backgroundColor: '#48bb78', color: 'white', borderColor: '#48bb78' };
-                  } else {
-                    optionStyle = { opacity: 0.5 };
-                  }
-                }
-
-                return (
+            {/* WRITE PINYIN MODE */}
+            {vocabPracticeMode === 'WritePinyin' ? (
+              <div className="pinyin-input-container">
+                <input
+                  ref={pinyinInputRef}
+                  type="text"
+                  className={`pinyin-input ${pinyinStatus ? pinyinStatus : ''}`}
+                  placeholder="Nhập pinyin có dấu (ví dụ: nǐ hǎo)..."
+                  value={pinyinInputText}
+                  onChange={(e) => setPinyinInputText(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      if (!isMeaningVisible) {
+                        handleCheckPinyin();
+                      } else if (currentVocabIndex < vocabList.length - 1) {
+                        setCurrentVocabIndex(currentVocabIndex + 1);
+                        generateVocabOptions(vocabList[currentVocabIndex + 1], vocabList);
+                      }
+                    }
+                  }}
+                  disabled={isMeaningVisible && isVocabCorrect}
+                />
+                <div className="pinyin-actions">
                   <button 
-                    key={idx} 
-                    className="option-btn"
-                    onClick={() => handleVocabAnswer(opt)}
-                    disabled={isMeaningVisible}
-                    style={optionStyle}
+                    className="btn-generate" 
+                    style={{ background: '#3182CE', padding: '12px 30px' }}
+                    onClick={handleCheckPinyin}
+                    disabled={!pinyinInputText.trim()}
                   >
-                    <span style={{marginRight: '8px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#A0AEC0', fontSize: '14px'}}>{idx + 1}.</span>
-                    {opt}
-                    {vocabDirection === 'Việt -> Trung' && (
-                      <div style={{fontSize: '13px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#718096', marginTop: '4px'}}>
-                        {pinyin(opt)}
-                      </div>
-                    )}
+                    ✔️ Kiểm tra
                   </button>
-                );
-              })}
-            </div>
+                </div>
+              </div>
+            ) : (
+              /* MULTIPLE CHOICE MODE */
+              <div className="options-grid">
+                {vocabOptions.map((opt, idx) => {
+                  const isCorrectOption = vocabDirection === 'Trung -> Việt' 
+                    ? opt === currentVocab.Meaning
+                    : opt === currentVocab.Chinese;
+                  
+                  let optionStyle = {};
+                  if (isMeaningVisible) {
+                    if (isCorrectOption) {
+                      optionStyle = { backgroundColor: '#48bb78', color: 'white', borderColor: '#48bb78' };
+                    } else {
+                      optionStyle = { opacity: 0.5 };
+                    }
+                  }
+
+                  return (
+                    <button 
+                      key={idx} 
+                      className="option-btn"
+                      onClick={() => handleVocabAnswer(opt)}
+                      disabled={isMeaningVisible}
+                      style={optionStyle}
+                    >
+                      <span style={{marginRight: '8px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#A0AEC0', fontSize: '14px'}}>{idx + 1}.</span>
+                      {opt}
+                      {vocabDirection === 'Việt -> Trung' && (
+                        <div style={{fontSize: '13px', color: (isMeaningVisible && isCorrectOption) ? '#e2e8f0' : '#718096', marginTop: '4px'}}>
+                          {pinyin(opt)}
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         )}
 
@@ -764,9 +782,6 @@ function App() {
             <div className="view-header">
               <div className="view-title">Ghép / Dịch Câu</div>
               <div style={{display: 'flex', gap: '15px', alignItems: 'center'}}>
-                <button className="btn-generate" style={{padding: '10px 20px', background: '#9F7AEA'}} onClick={handleGenerateMoreSentences} disabled={isGeneratingSentences}>
-                  {isGeneratingSentences ? '⏳ Đang tạo...' : '✨ Tạo thêm câu (AI)'}
-                </button>
                 <button className="btn-generate" style={{padding: '10px 20px'}} onClick={openAnalysis}>📊 Phân Tích</button>
                 <select className="sidebar-select" style={{marginBottom: 0, minWidth: '150px'}} value={matchDirection} onChange={(e) => setMatchDirection(e.target.value)}>
                   <option value="Trung -> Việt">Trung {'>'} Việt</option>
@@ -855,19 +870,6 @@ function App() {
               {sentenceFeedback && (
                 <div style={{marginTop: '20px', padding: '15px', borderRadius: '8px', fontSize: '18px', fontWeight: 'bold', backgroundColor: sentenceFeedback.includes('Chính xác') ? '#C6F6D5' : '#FED7D7', color: sentenceFeedback.includes('Chính xác') ? '#2F855A' : '#C53030'}}>
                   {sentenceFeedback}
-                  {sentenceFeedback.includes('Sai rồi') && !aiExplainText && (
-                    <div style={{marginTop: '10px'}}>
-                      <button className="btn-generate" style={{background: '#FEFCBF', color: '#B7791F', fontSize: '14px', padding: '5px 10px'}} onClick={handleAskAIExplanation} disabled={isAiExplaining}>
-                        {isAiExplaining ? '🤖 AI đang phân tích lỗi sai...' : '🤖 Hỏi lại AI vì sao sai?'}
-                      </button>
-                    </div>
-                  )}
-                  {aiExplainText && (
-                     <div style={{marginTop: '10px', padding: '10px', background: '#fff', borderRadius: '5px', fontSize: '14px', color: '#2D3748', border: '1px solid #CBD5E0', fontWeight: 'normal', textAlign: 'left'}}>
-                       <strong style={{color: '#B7791F'}}>AI Giải thích:</strong><br/>
-                       {aiExplainText}
-                     </div>
-                  )}
                 </div>
               )}
 
@@ -881,7 +883,6 @@ function App() {
           </div>
         )}
 
-
       </div>
 
       {/* ANALYSIS MODAL */}
@@ -890,59 +891,24 @@ function App() {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <div className="modal-title">📊 Bảng Phân Tích Tiến Độ</div>
             
-            <div className="stat-row">
-              <span style={{color: '#48BB78', fontWeight: 'bold'}}>Tổng câu ĐÚNG:</span>
-              <span style={{fontWeight: 'bold'}}>{analysisStats.totalCorrect}</span>
-            </div>
-            
-            <div className="stat-row">
-              <span style={{color: '#E53E3E', fontWeight: 'bold'}}>Tổng câu SAI:</span>
-              <span style={{fontWeight: 'bold'}}>{analysisStats.totalWrong}</span>
-            </div>
-
-            <div style={{display: 'flex', gap: '20px', marginBottom: '15px'}}>
-              <div style={{flex: 1, backgroundColor: '#EBF8FF', padding: '10px', borderRadius: '8px'}}>
-                <span style={{color: '#2B6CB0'}}>Đã học: </span>
-                <span style={{color: '#2B6CB0', fontWeight: 'bold', fontSize: '18px'}}>{analysisStats.learnedCount}</span>
+            <div className="analysis-stats-summary">
+              <div className="stat-badge stat-badge-correct">
+                <span className="stat-badge-label">Tổng câu ĐÚNG:</span>
+                <span className="stat-badge-value">{analysisStats.totalCorrect}</span>
               </div>
-              <div style={{flex: 1, backgroundColor: '#FED7D7', padding: '10px', borderRadius: '8px'}}>
-                <span style={{color: '#C53030'}}>Chưa học: </span>
-                <span style={{color: '#C53030', fontWeight: 'bold', fontSize: '18px'}}>{analysisStats.unlearnedCount}</span>
+              <div className="stat-badge stat-badge-wrong">
+                <span className="stat-badge-label">Tổng câu SAI:</span>
+                <span className="stat-badge-value">{analysisStats.totalWrong}</span>
+              </div>
+              <div className="stat-badge stat-badge-learned">
+                <span className="stat-badge-label">Đã học:</span>
+                <span className="stat-badge-value">{analysisStats.learnedCount}</span>
+              </div>
+              <div className="stat-badge stat-badge-unlearned">
+                <span className="stat-badge-label">Chưa học:</span>
+                <span className="stat-badge-value">{analysisStats.unlearnedCount}</span>
               </div>
             </div>
-
-            <div style={{padding: '15px', backgroundColor: '#F7FAFC', borderRadius: '10px'}}>
-              <div style={{color: analysisStats.evalColor, fontWeight: 'bold', fontSize: '18px', marginBottom: '10px'}}>
-                {analysisStats.evalText}
-              </div>
-              <div style={{width: '100%', backgroundColor: '#E2E8F0', height: '10px', borderRadius: '5px', overflow: 'hidden'}}>
-                <div style={{width: `${analysisStats.percentage}%`, backgroundColor: analysisStats.evalColor, height: '100%'}}></div>
-              </div>
-            </div>
-
-            {analysisStats.topWrong.length > 0 && (
-              <div style={{marginTop: '20px', marginBottom: '10px'}}>
-                <div style={{fontWeight: 'bold', marginBottom: '10px'}}>Các mục sai nhiều nhất:</div>
-                <div style={{display: 'flex', flexDirection: 'column', gap: '8px'}}>
-                  {analysisStats.topWrong.map((item, idx) => (
-                    <div key={idx} style={{
-                      display: 'flex', 
-                      justifyContent: 'space-between', 
-                      background: '#F7FAFC', 
-                      padding: '10px', 
-                      borderRadius: '5px',
-                      borderLeft: '4px solid #E53E3E'
-                    }}>
-                      <div>
-                        <div style={{fontWeight: 'bold'}}>{item.Chinese}</div>
-                        <div style={{fontSize: '12px', color: '#718096'}}>{item.Meaning || item.Vietnamese}</div>
-                      </div>
-                      <div style={{color: '#E53E3E', fontWeight: 'bold'}}>Sai {item.WrongCount} lần</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
 
             <div className="analysis-table-container">
               <table className="analysis-table">
@@ -974,9 +940,9 @@ function App() {
         </div>
       )}
 
-      {/* AI CHAT MODAL REMOVED */}
     </div>
   )
 }
 
 export default App
+

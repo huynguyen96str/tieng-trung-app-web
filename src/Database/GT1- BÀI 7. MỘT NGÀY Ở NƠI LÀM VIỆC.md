@@ -1,208 +1,101 @@
-Dưới đây là toàn bộ nội dung bài học đã được chuyển đổi và định dạng lại thành file Markdown (.md) theo đúng tất cả các quy tắc được yêu cầu:
-
 # GT1- BÀI 7. MỘT NGÀY Ở NƠI LÀM VIỆC
 
-## 01. TỪ VỰNG
+## I. TỪ VỰNG
 
-| STT | Tiếng Trung | Phiên Âm | Nghĩa |
-|---|---|---|---|
-| 1 | 上班 | shàngbān | Đi làm |
-| 2 | 下班 | xiàbān | Tan làm |
-| 3 | 迟到 | chídào | Đi muộn, đến muộn |
-| 4 | 早退 | zǎotuì | Về sớm |
-| 5 | 加班 | jiābān | Làm thêm giờ / tăng ca |
-| 6 | 请假 | qǐngjià | Xin nghỉ |
-| 7 | 办公室 | bàngōngshì | Văn phòng |
-| 8 | 会议 | huìyì | Cuộc họp |
-| 9 | 同事 | tóngshì | Đồng nghiệp |
-| 10 | 经理 | jīnglǐ | Giám đốc / Quản lý |
-| 11 | 工作 | gōngzuò | Công việc, làm việc |
-| 12 | 任务 | rènwu | Nhiệm vụ |
-| 13 | 完成 | wánchéng | Hoàn thành |
-| 14 | 会议 | huìyì | Cuộc họp (Ghi chú: 参加 /cānjiā/: tham gia) |
-| 15 | 报告 | bàogào | Báo cáo |
-| 16 | 工作总结 | gōngzuò zǒngjié | Tổng kết công việc |
-| 17 | 发邮件 | fā yóujiàn | Gửi email |
-| 18 | 电话 | diànhuà | Điện thoại |
-| 19 | 打电话 | dǎ diànhuà | Gọi điện thoại |
-| 20 | 文件 | wénjiàn | Tài liệu |
-| 21 | 打印 | dǎyìn | In ấn |
-| 22 | 复印 | fùyìn | Photocopy |
-| 23 | 电脑 | diànnǎo | Máy tính |
-| 24 | 打卡 | dǎkǎ | Chấm công |
-| 25 | 请假 | qǐngjià | Xin nghỉ (nghỉ phép) |
-| 26 | 开始 | kāishǐ | Bắt đầu |
-| 27 | 出差 | chūchāi | Đi công tác |
-| 28 | 结束 | jiéshù | Kết thúc |
-| 29 | 秘书 | mìshū | Thư ký |
-| 30 | 放心 | fàngxīn | Yên tâm |
-| 31 | 电梯 | diàntī | Thang máy |
-| 32 | 楼梯 | lóutī | Thang bộ |
-| 33 | 自动扶梯 | zìdòng fútī | Thang cuốn |
-
-*Ghi chú ngữ pháp bổ sung từ vựng:*
-- 因为……所以…… (Yīnwèi... suǒyǐ...): Bởi vì... cho nên...
-
----
-
-## 02. NGỮ PHÁP CƠ BẢN
-
-### CẤU TRÚC 1: Chủ ngữ + 给 + Người + Động từ
-- **Công thức:** `Chủ ngữ + gěi + rén + động từ`
-- **Ý nghĩa:** Làm gì cho ai. Diễn tả hành động làm gì hướng tới hoặc phục vụ cho một đối tượng nào đó.
-
-**Ví dụ:**
-- 我给同事发邮件。 (Wǒ gěi tóngshì fā yóujiàn.) - Tôi gửi email cho đồng nghiệp.
-  > Giải thích: S + gěi(给): Làm gì cho ai
-- 他给经理打电话。 (Tā gěi jīnglǐ dǎ diànhuà.) - Anh ấy gọi điện cho quản lý.
-  > Giải thích: S + gěi(给): Làm gì cho ai
-
-*Từ vựng mở rộng:* 寄信 (jì xìn): gửi thư.
-
----
-
-### CẤU TRÚC 2: S + 要 / 想 + V
-- **Công thức:** `Chủ ngữ + yào / xiǎng + Động từ`
-- **Ý nghĩa:** Muốn / cần làm gì. Diễn tả ý định, mong muốn hoặc nhu cầu thực hiện một hành động.
-
-**Ví dụ:**
-- 我今天想请一天假。 (Wǒ jīntiān xiǎng qǐng yì tiān jià.) - Hôm nay tôi muốn xin nghỉ một ngày.
-  > Giải thích: xiǎng(想): Muốn
-- 他明天要加班。 (Tā míngtiān yào jiābān.) - Ngày mai anh ấy phải tăng ca.
-  > Giải thích: yào(要): Phải
-
-*Từ vựng mở rộng:* 咖啡店 (kāfēidiàn): quán café.
-
----
-
-### CẤU TRÚC 3: Chủ ngữ + 可以 / 能 + Động từ
-- **Công thức:** `Zhǔyǔ + kěyǐ / néng + dòngcí`
-- **Ý nghĩa:** Chủ ngữ có thể / được phép làm gì. Diễn tả khả năng hoặc sự cho phép thực hiện hành động.
-
-**Ví dụ:**
-- 你可以在办公室休息一下。 (Nǐ kěyǐ zài bàngōngshì xiūxi yíxià.) - Bạn có thể nghỉ ngơi một chút ở văn phòng.
-  > Giải thích: kěyǐ(可以): Có thể (Giữa câu), Được chứ(Đầu câu)
-- 我能完成今天的任务。 (Wǒ néng wánchéng jīntiān de rènwu.) - Tôi có thể hoàn thành nhiệm vụ hôm nay.
-  > Giải thích: néng(能): Giúp đỡ
-
----
-
-## 03. MẪU CÂU THÔNG DỤNG
-
-- 你几点上班？ (Nǐ jǐ diǎn shàngbān?) - Bạn mấy giờ đi làm?
-- 我早上九点上班。 (Wǒ zǎoshang jiǔ diǎn shàngbān.) - Tôi đi làm lúc 9 giờ sáng.
-- 你今天有会议吗？ (Nǐ jīntiān yǒu huìyì ma?) - Hôm nay bạn có cuộc họp không?
-- 我下午三点开会。 (Wǒ xiàwǔ sān diǎn kāihuì.) - Tôi họp lúc 3 giờ chiều.
-- 你今天忙吗？ (Nǐ jīntiān máng ma?) - Hôm nay bạn bận không?
-- 我很忙，要加班。 (Wǒ hěn máng, yào jiābān.) - Tôi rất bận, phải tăng ca.
-  > Giải thích: yào(要): Phải
-- 你给同事发邮件了吗？ (Nǐ gěi tóngshì fā yóujiàn le ma?) - Bạn đã gửi email cho đồng nghiệp chưa?
-  > Giải thích: S + gěi(给): Làm gì cho ai
-- 我给经理打电话了。 (Wǒ gěi jīnglǐ dǎ diànhuà le.) - Tôi đã gọi điện cho quản lý rồi.
-  > Giải thích: S + gěi(给): Làm gì cho ai
-- 你今天想请假吗？ (Nǐ jīntiān xiǎng qǐngjià ma?) - Hôm nay bạn muốn xin nghỉ không?
-  > Giải thích: xiǎng(想): Muốn
-- 我今天请病假。 (Wǒ jīntiān qǐng bìngjià.) - Hôm nay tôi xin nghỉ ốm.
-- 你可以帮我复印文件吗？ (Nǐ kěyǐ bāng wǒ fùyìn wénjiàn ma?) - Bạn có thể giúp tôi photocopy tài liệu không?
-  > Giải thích: kěyǐ(可以): Có thể (Giữa câu), Được chứ(Đầu câu)
-- 我能完成今天的任务。 (Wǒ néng wánchéng jīntiān de rènwu.) - Tôi có thể hoàn thành nhiệm vụ hôm nay.
-  > Giải thích: Năng nguyện động từ "能" thể hiện bản thân có đủ năng lực hoàn thành công việc.
-
----
-
-## 04. HỘI THOẠI
-
-### Hội thoại 1: Buổi sáng đi làm
-
-- A: 你今天几点上班？ (Nǐ jīntiān jǐ diǎn shàngbān?) - Hôm nay mấy giờ bạn đi làm?
-- B: 我早上九点上班。 (Wǒ zǎoshang jiǔ diǎn shàngbān.) - Tôi đi làm lúc 9 giờ sáng.
-  > Giải thích: Thời gian "早上九点" đóng vai trò làm trạng ngữ chỉ thời gian đứng trước động từ.
-- A: 你今天有会议吗？ (Nǐ jīntiān yǒu huìyì ma?) - Hôm nay bạn có cuộc họp không?
-  > Giải thích: Câu hỏi xác nhận thông tin sử dụng trợ từ nghi vấn "吗".
-- B: 有，下午三点开会。 (Yǒu, xiàwǔ sān diǎn kāihuì.) - Có, 3 giờ chiều họp.
-- A: 你忙吗？ (Nǐ máng ma?) - Bạn bận không?
-- B: 很忙，要加班。 (Hěn máng, yào jiābān.) - Rất bận, phải tăng ca.
-  > Giải thích: yào(要): Phải
-
----
-
-### Hội thoại 2: Giao tiếp với đồng nghiệp
-
-- A: 你给同事发邮件了吗？ (Nǐ gěi tóngshì fā yóujiàn le ma?) - Bạn đã gửi email cho đồng nghiệp chưa?
-  > Giải thích: Áp dụng cấu trúc "给 + ai + làm gì" và câu hỏi hoàn thành "了...吗".
-- B: 还没，我现在去发。 (Hái méi, wǒ xiànzài qù fā.) - Chưa, bây giờ tôi đi gửi đây.
-- A: 你能帮我复印文件吗？ (Nǐ néng bāng wǒ fùyìn wénjiàn ma?) - Bạn có thể giúp tôi photocopy tài liệu không?
-  > Giải thích: néng(能): Giúp đỡ
-- B: 可以，我马上复印。 (Kěyǐ, wǒ mǎshàng fùyìn.) - Được chứ, tôi sẽ photocopy ngay.
-  > Giải thích: kěyǐ(可以): Có thể (Giữa câu), Được chứ(Đầu câu)
-- A: 谢谢你！ (Xièxiè nǐ!) - Cảm ơn bạn!
-- B: 不客气。 (Bú kèqì.) - Không có gì.
-
----
-
-### Hội thoại 3: Kết thúc công việc / về nhà
-
-- A: 你今天完成任务了吗？ (Nǐ jīntiān wánchéng rènwu le ma?) - Hôm nay bạn đã hoàn thành nhiệm vụ chưa?
-- B: 完成了，终于可以下班了。 (Wánchéng le, zhōngyú kěyǐ xiàbān le.) - Hoàn thành rồi, cuối cùng cũng có thể tan làm rồi.
-  > Giải thích: kěyǐ(可以): Có thể (Giữa câu), Được chứ(Đầu câu)
-- A: 今天加班了吗？ (Jīntiān jiābān le ma?) - Hôm nay có tăng ca không?
-- B: 没有，今天按时下班。 (Méi yǒu, jīntiān ànshí xiàbān.) - Không có, hôm nay tan làm đúng giờ.
-- A: 那回家休息吧！ (Nà huí jiā xiūxi ba!) - Thế thì về nhà nghỉ ngơi đi!
-- B: 好的，我回家做晚饭。 (Hǎo de, wǒ huí jiā zuò wǎnfàn.) - Được rồi, tôi về nhà nấu cơm tối.
-
----
-
-## 05. LUYỆN TẬP
-
-### Bài 1: Luyện nói – trả lời
-
-- 你每天几点上班？ (Nǐ měitiān jǐ diǎn shàngbān?) - Mỗi ngày bạn mấy giờ đi làm?
-- 你今天有会议吗？ (Nǐ jīntiān yǒu huìyì ma?) - Hôm nay bạn có cuộc họp không?
-  > Giải thích: Câu hỏi xác nhận sự lịch trình công việc trong ngày.
-- 你今天要加班吗？ (Nǐ jīntiān yào jiābān ma?) - Hôm nay bạn có phải tăng ca không?
-  > Giải thích: yào(要): Phải
-- 你今天请假吗？ (Nǐ jīntiān qǐngjià ma?) - Hôm nay bạn có xin nghỉ không?
-- 你可以帮我复印文件吗？ (Nǐ kěyǐ bāng wǒ fùyìn wénjiàn ma?) - Bạn có thể giúp tôi photocopy tài liệu không?
-  > Giải thích: Câu nhờ vả sử dụng trợ động từ "可以" và động từ "帮".
-- 你每天几点睡觉？ (Nǐ měitiān jǐ diǎn shuìjiào?) - Mỗi ngày bạn đi ngủ lúc mấy giờ?
-- 你每天几点下班？ (Nǐ měitiān jǐ diǎn xiàbān?) - Mỗi ngày bạn tan làm lúc mấy giờ?
-- 下班后，你常常做什么？ (Xiàbān hòu, nǐ chángcháng zuò shénme?) - Sau khi tan làm, bạn thường làm gì?
-- 你几点吃晚饭？ (Nǐ jǐ diǎn chī wǎnfàn?) - Mấy giờ bạn ăn tối?
-- 吃完晚饭你常常做什么？ (Chī wán wǎnfàn nǐ chángcháng zuò shénme?) - Ăn cơm tối xong bạn thường làm gì?
-
----
-
-### Bài 2: Dịch Việt – Trung
-
-- 我早上八点上班。 (Wǒ zǎoshang bā diǎn shàngbān.) - Tôi đi làm lúc 8 giờ sáng.
-- 今天我 me有会议。 / 我今天有一个会议。 (Wǒ jīntiān yǒu yí gè huìyì.) - Hôm nay tôi có một cuộc họp.
-- 他明天要加班。 (Tā míngtiān yào jiābān.) - Anh ấy phải tăng ca ngày mai.
-  > Giải thích: Đặt trạng ngữ thời gian "明天" trước động từ năng nguyện "要".
-- 我今天想请假。 (Wǒ jīntiān xiǎng qǐngjià.) - Tôi muốn xin nghỉ hôm nay.
-  > Giải thích: xiǎng(想): Muốn
-- 你可以帮我打印/复印文件吗？ (Nǐ kěyǐ bāng wǒ dǎyìn/fùyìn wénjiàn ma?) - Bạn có thể giúp tôi in tài liệu không?
-  > Giải thích: kěyǐ(可以): Có thể (Giữa câu), Được chứ(Đầu câu)
-- 我给经理打电话了。 (Wǒ gěi jīnglǐ dǎ diànhuà le.) - Tôi đã gọi điện cho quản lý.
-  > Giải thích: Áp dụng ngữ pháp "给 + người + động từ + 了".
-- 中午我休息半个小时。 (Zhōngwǔ wǒ xiūxi bàn gè xiǎoshí.) - Buổi trưa tôi nghỉ nửa tiếng.
-- 我们在会议室开会。 (Wǒmen zài huìyìshì kāihuì.) - Chúng tôi họp trong phòng họp.
-- 我完成 telegram/今天的任务。 / 我完成了今天的任务。 (Wǒ wánchéng le jīntiān de rènwu.) - Tôi hoàn thành nhiệm vụ hôm nay.
-- 我回家做晚饭。 (Wǒ huí jiā zuò wǎnfàn.) - Tôi về nhà nấu cơm tối.
-
----
-
-### Bài 3: Nối câu hội thoại
-
-**Cột A và Cột B ghép tương ứng:**
-
-- 你今天几点上班？ (Nǐ jīntiān jǐ diǎn shàngbān?) - Hôm nay bạn đi làm lúc mấy giờ?
-- 我早上九点上班。 (Wǒ zǎoshang jiǔ diǎn shàngbān.) - Tôi đi làm lúc 9h sáng
-- 你今天有会议吗？ (Nǐ jīntiān yǒu huìyì ma?) - Hôm nay bạn có cuộc họp không?
-- 有，下午三点开会。 (Yǒu, xiàwǔ sān diǎn kāihuì.) - Có, họp lúc 3h chiều
-- 你今天忙吗？ (Nǐ jīntiān máng ma?) - Hôm nay, bạn có bận không?
-- 很忙，要加班。 (Hěn máng, yào jiābān.) - Rất bận, phải tăng ca
-  > Giải thích: yào(要): Phải
-
----
-
-*谢谢大家关注 - CẢM ƠN MỌI NGƯỜI ĐÃ THEO DÕI*
+| GUID | Tiếng Trung | Phiên Âm | Nghĩa | Diễn giải cách nhớ |
+|---|---|---|---|---|
+| 3f2504e0-4f89-11d3-9a0c-0305e82c3301 | 上班 | shàngbān | Đi làm | Ghép từ shàng (lên/đến) và bān (ca làm việc) -> đến nơi làm việc theo ca. |
+| 8a7c2e3a-4b5c-6d7e-8f9a-0b1c2d3e4f5g | 下班 | xiàbān | Tan làm | Ghép từ xià (xuống/rời khỏi) và bān (ca làm việc) -> rời khỏi ca làm việc. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 迟到 | chídào | Đi muộn, đến muộn | Ghép từ chí (chậm trễ) và dào (đến) -> đến muộn, chậm giờ. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 早退 | zǎotuì | Về sớm | Ghép từ zǎo (sớm) và tuì (rút lui/rời đi) -> rời đi sớm hơn giờ quy định. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 加班 | jiābān | Làm thêm giờ / tăng ca | Ghép từ jiā (thêm) và bān (ca làm việc) -> làm thêm ca ngoài giờ. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 请假 | qǐngjià | Xin nghỉ | Ghép từ qǐng (xin/yêu cầu) và jià (ngày nghỉ) -> xin phép được nghỉ. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 办公室 | bàngōngshì | Văn phòng | Ghép từ bàn (xử lý/làm việc), gōng (công việc) và shì (phòng) -> phòng làm việc. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 会议室 | huìyìshì | Phòng họp | Ghép từ huì (tụ họp), yì (bàn bạc/thảo luận) và shì (phòng) -> phòng để tụ họp bàn bạc. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 同事 | tóngshì | Đồng nghiệp | Ghép từ tóng (cùng/chung) và shì (việc) -> người cùng làm chung một việc/cơ quan. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 经理 | jīnglǐ | Giám đốc | Ghép từ jīng (quản lý/kinh doanh) và lǐ (xử lý/điều hành) -> người điều hành công việc. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 工作 | gōngzuò | Công việc, làm việc | Ghép từ gōng (công việc) và zuò (làm) -> làm công việc. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 任务 | rènwu | Nhiệm vụ | Ghép từ rèn (trách nhiệm) và wu (việc) -> việc được giao với trách nhiệm phải làm. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 完成 | wánchéng | Hoàn thành | Ghép từ wán (trọn vẹn/đầy đủ) và chéng (trở thành/hoàn tất) -> làm cho trọn vẹn, xong xuôi. |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 会议 | huìyì | Cuộc họp | Ghép từ huì (tụ họp) và yì (bàn bạc/thảo luận) -> buổi tụ họp để bàn bạc công việc. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 报告 | bàogào | Báo cáo | Ghép từ bào (báo tin) và gào (trình bày) -> trình bày tin tức, thông tin. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 工作总结 | gōngzuò zǒngjié | Tổng kết công việc | Ghép từ gōngzuò (công việc) và zǒngjié (tổng hợp kết luận) -> tổng hợp, đánh giá lại công việc. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 发邮件 | fā yóujiàn | Gửi email | Ghép từ fā (gửi) và yóujiàn (thư từ/bưu kiện) -> gửi thư điện tử. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 电话 | diànhuà | Điện thoại | Ghép từ diàn (điện) và huà (lời nói) -> thiết bị dùng điện để truyền lời nói. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 打电话 | dǎ diànhuà | Gọi điện thoại | Ghép từ dǎ (đánh/bấm) và diànhuà (điện thoại) -> thao tác bấm số để gọi qua điện thoại. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 文件 | wénjiàn | Tài liệu | Ghép từ wén (văn bản) và jiàn (vật phẩm) -> vật phẩm chứa văn bản, tài liệu. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 打印 | dǎyìn | In ấn | Ghép từ dǎ (đánh/bấm) và yìn (in) -> thao tác bấm máy để in ra giấy. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 复印 | fùyìn | Photocopy | Ghép từ fù (lặp lại/sao chép) và yìn (in) -> in lại bản sao từ bản gốc. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 电脑 | diànnǎo | Máy tính | Ghép từ diàn (điện) và nǎo (não) -> bộ não điện tử, máy tính. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 打卡 | dǎkǎ | Chấm công | Ghép từ dǎ (đánh/bấm) và kǎ (thẻ) -> bấm thẻ để xác nhận giờ làm việc. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 开始 | kāishǐ | Bắt đầu | Ghép từ kāi (mở ra) và shǐ (khởi đầu) -> mở ra một khởi đầu mới. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 出差 | chūchāi | Đi công tác | Ghép từ chū (ra ngoài) và chāi (sai phái/nhiệm vụ) -> ra ngoài làm nhiệm vụ được giao. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 结束 | jiéshù | Kết thúc | Ghép từ jié (kết lại) và shù (chấm dứt) -> kết lại, chấm dứt. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 秘书 | mìshū | Thư ký | Ghép từ mì (bí mật) và shū (ghi chép) -> người ghi chép các công việc bí mật/quan trọng. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 放心 | fàngxīn | Yên tâm | Ghép từ fàng (đặt để) và xīn (tim/tấm lòng) -> đặt tấm lòng xuống, không lo lắng. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 电梯 | diàntī | Thang máy | Ghép từ diàn (điện) và tī (thang) -> thang chạy bằng điện. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 楼梯 | lóutī | Thang bộ | Ghép từ lóu (tầng lầu) và tī (thang) -> thang để lên xuống các tầng lầu. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 自动扶梯 | zìdòng fútī | Thang cuốn | Ghép từ zìdòng (tự động) và fútī (thang nâng) -> thang tự động di chuyển. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 因为……所以 | yīnwèi……suǒyǐ | Bởi vì……cho nên | Ghép từ yīnwèi (bởi vì) và suǒyǐ (cho nên) -> cặp từ nối nguyên nhân - kết quả. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 堵车 | dǔchē | Tắc đường | Ghép từ dǔ (tắc/nghẽn) và chē (xe) -> xe bị nghẽn lại, không di chuyển được. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 急事 | jíshì | Việc gấp | Ghép từ jí (gấp gáp) và shì (việc) -> việc cần xử lý gấp. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 下雨 | xiàyǔ | Mưa | Ghép từ xià (rơi xuống) và yǔ (mưa) -> nước mưa rơi xuống. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 不舒服 | bù shūfu | Không thoải mái | Ghép từ bù (không) và shūfu (thoải mái/dễ chịu) -> cảm thấy không dễ chịu. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 很累 | hěn lèi | Rất mệt | Ghép từ hěn (rất) và lèi (mệt mỏi) -> mệt mỏi nhiều. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 生病 | shēngbìng | Ốm | Ghép từ shēng (sinh ra/phát sinh) và bìng (bệnh) -> bệnh phát sinh trong cơ thể. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 感冒 | gǎnmào | Cảm cúm | Ghép từ gǎn (nhiễm phải) và mào (cảm lạnh) -> nhiễm bệnh cảm lạnh. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 谈话 | tánhuà | Nói chuyện | Ghép từ tán (trò chuyện) và huà (lời nói) -> trò chuyện bằng lời nói. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 商量 | shāngliang | Thương lượng | Ghép từ shāng (bàn bạc) và liang (lượng/xem xét) -> bàn bạc, xem xét để đi đến thống nhất. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 集合 | jíhé | Tập trung | Ghép từ jí (tụ lại) và hé (hợp lại) -> tụ họp lại một chỗ. |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 热情 | rèqíng | Nhiệt tình | Ghép từ rè (nóng) và qíng (tình cảm) -> tình cảm nồng nhiệt. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 友好 | yǒuhǎo | Thân thiện | Ghép từ yǒu (bạn bè) và hǎo (tốt) -> tốt với bạn bè, thân thiện. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 开朗 | kāiliǎng | Cởi mở | Ghép từ kāi (mở ra) và liǎng (sáng sủa) -> tâm hồn mở ra, sáng sủa, cởi mở. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 管理 | guǎnlǐ | Quản lý | Ghép từ guǎn (trông coi) và lǐ (xử lý) -> trông coi và xử lý công việc. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 终于 | zhōngyú | Cuối cùng | Ghép từ zhōng (kết thúc) và yú (cuối cùng) -> đi đến điểm kết thúc sau một thời gian dài. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 参加 | cānjiā | Tham gia | Ghép từ cān (tham dự) và jiā (gia nhập) -> tham dự và gia nhập vào hoạt động. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 发 | fā | Gửi | Nghĩa gốc là bắn ra/gửi đi -> chuyển thứ gì đó từ mình đến nơi khác. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 交 | jiāo | Nộp | Nghĩa gốc là giao/chuyển giao -> đưa cái gì đó cho người khác. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 月底 | yuèdǐ | Cuối tháng | Ghép từ yuè (tháng) và dǐ (đáy/cuối) -> thời điểm cuối của tháng. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 接电话 | jiē diànhuà | Nhận điện thoại | Ghép từ jiē (nhận/đón) và diànhuà (điện thoại) -> nhận cuộc gọi điện thoại. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 重要 | zhòngyào | Quan trọng | Ghép từ zhòng (nặng) và yào (cần thiết) -> có sức nặng, cần thiết. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 整理 | zhěnglǐ | Sắp xếp | Ghép từ zhěng (chỉnh tề) và lǐ (xử lý/sắp đặt) -> sắp đặt cho ngăn nắp, chỉnh tề. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 份 | fèn | Bản/tờ | Nghĩa gốc là phần -> dùng làm lượng từ cho tài liệu, văn bản. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 出问题 | chū wèntí | Trục trặc | Ghép từ chū (xuất hiện) và wèntí (vấn đề) -> vấn đề xuất hiện, có trục trặc. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 坏 | huài | Hỏng | Nghĩa gốc là hư hỏng, không hoạt động được. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 寄信 | jì xìn | Gửi thư | Ghép từ jì (gửi) và xìn (thư) -> gửi thư qua bưu điện. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 咖啡店 | kāfēidiàn | Quán café | Ghép từ kāfēi (cà phê) và diàn (cửa hàng) -> cửa hàng bán cà phê. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 正常 | zhèngcháng | Bình thường | Ghép từ zhèng (đúng/ngay thẳng) và cháng (thường) -> đúng như thông lệ, bình thường. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 可以 | kěyǐ | Có thể | Ghép từ kě (được phép) và yǐ (dùng để) -> được phép làm gì đó. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 能 | néng | Có thể | Nghĩa gốc là có khả năng -> diễn tả khả năng làm được việc gì. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 马上 | mǎshàng | Ngay lập tức | Ghép từ mǎ (ngựa) và shàng (lên) -> lên ngựa ngay, hành động tức thì. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 按时 | ànshí | Đúng giờ | Ghép từ àn (theo) và shí (thời gian) -> theo đúng thời gian đã định. |
+| 4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a | 晚饭 | wǎnfàn | Bữa tối | Ghép từ wǎn (tối) và fàn (cơm) -> bữa cơm buổi tối. |
+| 5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b | 休息 | xiūxi | Nghỉ ngơi | Ghép từ xiū (dừng lại) và xi (nghỉ) -> dừng lại để nghỉ ngơi. |
+| 6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c | 病假 | bìngjià | Nghỉ ốm | Ghép từ bìng (bệnh) và jià (ngày nghỉ) -> ngày nghỉ vì bệnh. |
+| 7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d | 帮 | bāng | Giúp | Nghĩa gốc là giúp đỡ, hỗ trợ người khác. |
+| 8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e | 还没 | hái méi | Vẫn chưa | Ghép từ hái (vẫn còn) và méi (chưa) -> vẫn còn chưa làm xong. |
+| 9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f | 现在 | xiànzài | Hiện tại | Ghép từ xiàn (hiện có) và zài (đang) -> thời điểm đang hiện hữu. |
+| 0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a | 谢谢 | xièxie | Cảm ơn | Ghép từ xiè (tạ ơn) lặp lại -> bày tỏ lòng biết ơn. |
+| 1e2f3a4b-5c6d-4e7f-8a9b-0c1d2e3f4a5b | 不客气 | bú kèqì | Không có gì | Ghép từ bù (không) và kèqì (khách sáo) -> không cần khách sáo, không có gì. |
+| 2f3a4b5c-6d7e-4f8a-9b0c-1d2e3f4a5b6c | 回家 | huí jiā | Về nhà | Ghép từ huí (quay về) và jiā (nhà) -> quay về nhà. |
+| 3a4b5c6d-7e8f-4a9b-0c1d-2e3f4a5b6c7d | 做 | zuò | Làm/nấu | Nghĩa gốc là làm -> trong ngữ cảnh nấu ăn, làm món ăn. |
+| 4b5c6d7e-8f9a-4b0c-1d2e-3f4a5b6c7d8e | 每天 | měitiān | Mỗi ngày | Ghép từ měi (mỗi) và tiān (ngày) -> mỗi ngày, hằng ngày. |
+| 5c6d7e8f-9a0b-4c1d-2e3f-4a5b6c7d8e9f | 睡觉 | shuìjiào | Đi ngủ | Ghép từ shuì (ngủ) và jiào (giấc ngủ) -> đi vào giấc ngủ. |
+| 6d7e8f9a-0b1c-4d2e-3f4a-5b6c7d8e9f0a | 半 | bàn | Nửa | Nghĩa gốc là một nửa. |
+| 7e8f9a0b-1c2d-4e3f-4a5b-6c7d8e9f0a1b | 小时 | xiǎoshí | Giờ (tiếng) | Ghép từ xiǎo (nhỏ) và shí (thời gian) -> đơn vị thời gian nhỏ. |
+| 8f9a0b1c-2d3e-4f4a-5b6c-7d8e9f0a1b2c | 中午 | zhōngwǔ | Buổi trưa | Ghép từ zhōng (giữa) và wǔ (buổi trưa) -> giữa buổi trưa. |
+| 9a0b1c2d-3e4f-4a5b-6c7d-8e9f0a1b2c3d | 上午 | shàngwǔ | Buổi sáng | Ghép từ shàng (trước/lên) và wǔ (buổi trưa) -> khoảng thời gian trước buổi trưa. |
+| 0b1c2d3e-4f5a-4b6c-7d8e-9f0a1b2c3d4e | 下午 | xiàwǔ | Buổi chiều | Ghép từ xià (sau/xuống) và wǔ (buổi trưa) -> khoảng thời gian sau buổi trưa. |
+| 1c2d3e4f-5a6b-4c7d-8e9f-0a1b2c3d4e5f | 点 | diǎn | Giờ (điểm) | Nghĩa gốc là điểm/chấm -> dùng để chỉ giờ đúng. |
+| 2d3e4f5a-6b7c-4d8e-9f0a-1b2c3d4e5f6a | 今天 | jīntiān | Hôm nay | Ghép từ jīn (hiện tại) và tiān (ngày) -> ngày hiện tại. |
+| 3e4f5a6b-7c8d-4e9f-0a1b-2c3d4e5f6a7b | 明天 | míngtiān | Ngày mai | Ghép từ míng (sáng sủa/rõ ràng) và tiān (ngày) -> bắt đầu một ngày mới sáng sủa. |
+| 4f5a6b7c-8d9e-4f0a-1b2c-3d4e5f6a7b8c | 忙 | máng | Bận | Nghĩa gốc là bận rộn, có nhiều việc phải làm. |
+| 5a6b7c8d-9e0f-4a1b-2c3d-4e5f6a7b8c9d | 很 | hěn | Rất | Nghĩa gốc là rất, dùng để tăng mức độ. |
+| 6b7c8d9e-0f1a-4b2c-3d4e-5f6a7b8c9d0e | 有 | yǒu | Có | Nghĩa gốc là có, tồn tại. |
+| 7c8d9e0f-1a2b-4c3d-4e5f-6a7b8c9d0e1f | 没 | méi | Không (chưa) | Nghĩa gốc là không có, dùng để phủ định. |
+| 8d9e0f1a-2b3c-4d4e-5f6a-7b8c9d0e1f2a | 了 | le | (trợ từ) | Trợ từ biểu thị hành động đã hoàn thành. |
+| 9e0f1a2b-3c4d-4e5f-6a7b-8c9d0e1f2a3b | 吗 | ma | (trợ từ hỏi) | Trợ từ đặt cuối câu để tạo câu hỏi. |
+| 0f1a2b3c-4d5e-4f6a-7b8c-9d0e1f2a3b4c | 我 | wǒ | Tôi | Nghĩa gốc là tôi, đại từ nhân xưng ngôi thứ nhất. |
+| 1a2b3c4d-5e6f-4a7b-8c9d-0e1f2a3b4c5d | 你 | nǐ | Bạn | Nghĩa gốc là bạn, đại từ nhân xưng ngôi thứ hai. |
+| 2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e | 他 | tā | Anh ấy | Nghĩa gốc là anh ấy, đại từ nhân xưng ngôi thứ ba. |
+| 3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f | 给 | gěi | Cho | Nghĩ

@@ -317,6 +317,55 @@ body {
   padding-bottom: 10px;
 }
 
+.analysis-stats-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.stat-badge {
+  padding: 12px 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.stat-badge-label {
+  font-weight: 600;
+}
+
+.stat-badge-value {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.stat-badge-correct {
+  background-color: #F0FFF4;
+  color: #276749;
+  border: 1px solid #C6F6D5;
+}
+
+.stat-badge-wrong {
+  background-color: #FFF5F5;
+  color: #9B2C2C;
+  border: 1px solid #FED7D7;
+}
+
+.stat-badge-learned {
+  background-color: #EBF8FF;
+  color: #2B6CB0;
+  border: 1px solid #BEE3F8;
+}
+
+.stat-badge-unlearned {
+  background-color: #EDF2F7;
+  color: #4A5568;
+  border: 1px solid #E2E8F0;
+}
+
 .stat-row {
   display: flex;
   justify-content: space-between;
@@ -452,18 +501,101 @@ body {
   
   .match-prompt-header { flex-direction: column; gap: 5px; }
   .match-prompt-header > div { font-size: 20px !important; }
-  .icon-group button { font-size: 20px !important; }
-  
   .match-action-buttons {
     display: grid !important;
     grid-template-columns: 1fr 1fr;
     gap: 10px !important;
     width: 100%;
-  }
-  .match-action-buttons .btn-generate {
-    width: 100%;
     padding: 12px 10px;
     font-size: 14px;
     margin: 0;
   }
+  .analysis-stats-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Practice Mode Toggle */
+.practice-mode-toggle {
+  display: flex;
+  background-color: #EDF2F7;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.mode-toggle-btn {
+  padding: 6px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4A5568;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mode-toggle-btn.active {
+  background-color: white;
+  color: #3182CE;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Pinyin Input Area */
+.pinyin-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pinyin-input {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 20px;
+  border: 2px solid #CBD5E0;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.2s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.pinyin-input:focus {
+  border-color: #3182CE;
+}
+
+.pinyin-input.correct {
+  border-color: #48BB78;
+  background-color: #F0FFF4;
+}
+
+.pinyin-input.wrong {
+  border-color: #E53E3E;
+  background-color: #FFF5F5;
+}
+
+.pinyin-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Memory Hint */
+.memory-hint {
+  background-color: #FEFCBF;
+  border: 1px solid #FAF089;
+  border-radius: 8px;
+  padding: 12px 18px;
+  margin-top: 15px;
+  color: #744210;
+  font-size: 15px;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.5;
 }

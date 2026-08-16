@@ -809,11 +809,10 @@ function App() {
                 </div>
               )}
 
-              {(currentSentence.GrammarContext || currentSentence.SyntaxExplanation) && (
+              {currentSentence.SyntaxExplanation && (
                 <div style={{backgroundColor: '#FFFFF0', border: '1px solid #FAF089', borderRadius: '8px', padding: '15px', marginTop: '15px', textAlign: 'left'}}>
-                  <div style={{fontWeight: 'bold', color: '#B7791F', marginBottom: '5px'}}>💡 Ngữ pháp:</div>
-                  {currentSentence.GrammarContext && <div style={{color: '#744210', fontWeight: 'bold', marginBottom: '5px'}}>{currentSentence.GrammarContext}</div>}
-                  {currentSentence.SyntaxExplanation && <div style={{color: '#744210'}}>{currentSentence.SyntaxExplanation}</div>}
+                  <div style={{fontWeight: 'bold', color: '#B7791F', marginBottom: '5px'}}>💡 Giải thích:</div>
+                  <div style={{color: '#744210'}}>{currentSentence.SyntaxExplanation}</div>
                 </div>
               )}
             </div>

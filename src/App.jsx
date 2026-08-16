@@ -644,13 +644,7 @@ function App() {
           🧩 Ghép / Dịch Câu
         </button>
 
-        <div className="sidebar-label">CÔNG CỤ TỰ ĐỘNG</div>
-        <button 
-          className={`sidebar-btn ${currentView === 'Import' ? 'active-import' : ''}`}
-          onClick={() => setCurrentView('Import')}
-        >
-          📄 Nhập bài (PDF)
-        </button>
+
 
         <div className="sidebar-label">CÀI ĐẶT</div>
         <button className="sidebar-btn sidebar-btn-danger" onClick={handleResetData}>
@@ -888,23 +882,6 @@ function App() {
           </div>
         )}
 
-        {/* IMPORT / AI VIEW */}
-        {currentView === 'Import' && (
-          <div>
-            <div className="view-header">
-              <div className="view-title">Tạo Bài Học Bằng AI</div>
-            </div>
-            <textarea 
-              className="import-area" 
-              placeholder="Dán nội dung PDF hoặc văn bản tiếng Trung vào đây..."
-              value={aiInput}
-              onChange={(e) => setAiInput(e.target.value)}
-            />
-            <button className="btn-generate" onClick={handleGenerateAI} disabled={isGenerating}>
-              {isGenerating ? "⏳ Đang tạo dữ liệu..." : "✨ Bắt đầu tạo bài"}
-            </button>
-          </div>
-        )}
 
       </div>
 

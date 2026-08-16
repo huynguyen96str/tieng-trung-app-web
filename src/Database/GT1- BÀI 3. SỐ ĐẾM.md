@@ -5,7 +5,7 @@
 | STT | Tiếng Trung | Phiên Âm | Nghĩa |
 |---|---|---|---|
 | 1 | 零 | líng | Số 0 |
-| 2 | 一 | yī / yāo | Số 1 (yāo dùng khi đọc số điện thoại/phòng) |
+| 2 | 一 | yī | Số 1 |
 | 3 | 二 | èr | Số 2 |
 | 4 | 三 | sān | Số 3 |
 | 5 | 四 | sì | Số 4 |
@@ -14,29 +14,29 @@
 | 8 | 七 | qī | Số 7 |
 | 9 | 八 | bā | Số 8 |
 | 10 | 九 | jiǔ | Số 9 |
-| 11 | 十 | shí | Mười (10) |
-| 12 | 二十 | èr shí | Hai mươi (20) |
-| 13 | 三十 | sān shí | Ba mươi (30) |
-| 14 | 四十 | sì shí | Bốn mươi (40) |
-| 15 | 五十 | wǔ shí | Năm mươi (50) |
-| 16 | 五十六 | wǔ shí liù | Năm mươi sáu (56) |
-| 17 | 六十 | liù shí | Sáu mươi (60) |
-| 18 | 七十 | qī shí | Bảy mươi (70) |
-| 19 | 八十 | bā shí | Tám mươi (80) |
-| 20 | 八十八 | bā shí bā | Tám mươi tám (88) |
-| 21 | 九十 | jiǔ shí | Chín mươi (90) |
-| 22 | 九十九 | jiǔ shí jiǔ | Chín mươi chín (99) |
-| 23 | 百 | bǎi | Trăm (100) |
-| 24 | 千 | qiān | Nghìn (1.000) |
+| 11 | 十 | shí | Mười |
+| 12 | 二十 | èr shí | Hai mươi |
+| 13 | 三十 | sān shí | Ba mươi |
+| 14 | 四十 | sì shí | Bốn mươi |
+| 15 | 五十 | wǔ shí | Năm mươi |
+| 16 | 五十六 | wǔ shí liù | Năm mươi sáu |
+| 17 | 六十 | liù shí | Sáu mươi |
+| 18 | 七十 | qī shí | Bảy mươi |
+| 19 | 八十 | bā shí | Tám mươi |
+| 20 | 八十八 | bā shí bā | Tám mươi tám |
+| 21 | 九十 | jiǔ shí | Chín mươi |
+| 22 | 九十九 | jiǔ shí jiǔ | Chín mươi chín |
+| 23 | 百 | bǎi | Trăm |
+| 24 | 千 | qiān | Nghìn |
 | 25 | 万 | wàn | Vạn / Mười nghìn (10.000) |
-| 26 | 亿 | yì | Ức / Trăm triệu (100.000.000) |
+| 26 | 亿 | yì | Trăm triệu (100.000.000) |
 | 27 | 岁 | suì | Tuổi |
 | 28 | 很容易 | hěn róngyì | Rất dễ |
 | 29 | 不难 | bù nán | Không khó |
-| 30 | 个 | gè | Cái, chiếc (lượng từ / đọc số lẻ) |
+| 30 | 个 | gè | Cái, chiếc |
 | 31 | 越南盾 | yuènándùn | Đồng Việt Nam (VNĐ) |
 | 32 | 人民币 | rénmínbì | Nhân dân tệ (RMB) |
-| 33 | 美元 | měiyuán | Đô la Mỹ ($ / USD) |
+| 33 | 美元 | měiyuán | Đô la Mỹ (USD) |
 
 ---
 
@@ -54,25 +54,25 @@
 
 * **VÍ DỤ**:
 - 一百 (yì bǎi) - Một trăm (100)
-  > Giải thích: Cấu trúc gồm số 1 (一) đứng trước đơn vị hàng trăm (百).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一百零一 (yì bǎi líng yī) - Một trăm lẻ một (101)
-  > Giải thích: Khi số ở hàng chục là 0, bắt buộc thêm 零 (líng) vào giữa hàng trăm và hàng đơn vị.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一百一十 (yì bǎi yī shí) - Một trăm mười (110)
-  > Giải thích: Khi đứng sau hàng trăm, số 1 ở hàng chục phải đọc rõ là 一十 (yī shí).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一百二十 (yì bǎi èr shí) - Một trăm hai mươi (120)
-  > Giải thích: Kết hợp hàng trăm (一百) và hàng chục (二十).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一百三十五 (yì bǎi sān shí wǔ) - Một trăm ba mươi lăm (135)
-  > Giải thích: Cấu trúc ghép đầy đủ: Hàng trăm (一百) + Hàng chục (三十) + Hàng đơn vị (五).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两百 (liǎng bǎi) - Hai trăm (200)
-  > Giải thích: Trong giao tiếp khẩu ngữ, số 2 trước đơn vị 百 thường đổi sang dùng 两 (liǎng).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两百零八 (liǎng bǎi líng bā) - Hai trăm lẻ tám (208)
-  > Giải thích: Dùng 两百 biểu thị 200, kết hợp từ 零 để nối số 0 ở hàng chục với đơn vị 8.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三百五十六 (sān bǎi wǔ shí liù) - Ba trăm năm mươi sáu (356)
-  > Giải thích: Cấu trúc ghép: Hàng trăm (三百) + Hàng chục (五十) + Hàng đơn vị (六).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 四百八十 (sì bǎi bā shí) - Bốn trăm tám mươi (480)
-  > Giải thích: Cấu trúc ghép: Hàng trăm (四百) + Hàng chục (八十).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九百九十九 (jiǔ bǎi jiǔ shí jiǔ) - Chín trăm chín mươi chín (999)
-  > Giải thích: Cấu trúc số lớn nhất có 3 chữ số, ghép đầy đủ từ 百, 十 đến đơn vị.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 * **Con số luyện tập hàng trăm**: 362, 400, 489, 500, 534, 682, 695, 999, 941.
 * **Số điện thoại mẫu**: 093487641 (líng jiǔ sān sì bā qī liù sì yī/yāo).
@@ -99,25 +99,25 @@
 
 * **VÍ DỤ**:
 - 一千 (yì qiān) - Một nghìn (1.000)
-  > Giải thích: Số 1 (一) kết hợp với đơn vị hàng nghìn 千 (qiān).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千零五 (yì qiān líng wǔ) - Một nghìn lẻ năm (1.005)
-  > Giải thích: Khuyết cả hàng trăm và hàng chục (2 số 0 liên tiếp) chỉ cần đọc một từ 零 (líng).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千零二十 (yì qiān líng èr shí) - Một nghìn không trăm hai mươi (1.020)
-  > Giải thích: Khuyết hàng trăm (số 0) nên đệm từ 零 trước hàng chục (二十).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千一百 (yì qiān yì bǎi) - Một nghìn một trăm (1.100)
-  > Giải thích: Ghép hàng nghìn (一千) với hàng trăm (一百).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千二百零八 (yì qiān èr bǎi líng bā) - Một nghìn hai trăm lẻ tám (1.208)
-  > Giải thích: Cấu trúc gồm 一千 + 二百 + số 0 ở hàng chục đọc là 零 + 八.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两千五百六十 (liǎng qiān wǔ bǎi liù shí) - Hai nghìn năm trăm sáu mươi (2.560)
-  > Giải thích: Số 2 trước đơn vị 千 dùng 两 (liǎng), kết hợp 五百 và 六十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三千 (sān qiān) - Ba nghìn (3.000)
-  > Giải thích: Số 3 (三) kết hợp đơn vị hàng nghìn 千.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 四千零一十八 (sì qiān líng yī shí bā) - Bốn nghìn không trăm mười tám (4.018)
-  > Giải thích: Hàng trăm là 0 đọc là 零; hàng chục có số 1 đứng sau 零 nên phải đọc rõ 一十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 七千四百五十 (qī qiān sì bǎi wǔ shí) - Bảy nghìn bốn trăm năm mươi (7.450)
-  > Giải thích: Ghép đầy đủ theo thứ tự: 七千 + 四百 + 五十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九千九百九十九 (jiǔ qiān jiǔ bǎi jiǔ shí jiǔ) - Chín nghìn chín trăm chín mươi chín (9.999)
-  > Giải thích: Cấu trúc số 4 chữ số đầy đủ từ 千, 百, 十 đến đơn vị.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 * **Con số luyện tập hàng nghìn**: 1010, 1018, 1026, 1045, 1097, 1200, 1279, 1300, 1391, 1982, 2000, 2007, 2754, 4026, 8094, 9827, 5723, 6981, 8765, 9898, 3087, 3521, 4652, 7421.
 
@@ -135,25 +135,25 @@
 
 * **VÍ DỤ**:
 - 一万 (yí wàn) - Mười nghìn / Một vạn (10.000)
-  > Giải thích: Đơn vị cơ bản của 4 chữ số 0 trong tiếng Trung là 万 (vạn).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一万零五 (yí wàn líng wǔ) - Mười nghìn lẻ năm (10.005)
-  > Giải thích: Tách 4 chữ số đuôi (0005), hàng vạn là 1万, các số 0 ở giữa dùng 零 để nối với số 5.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一万零二百 (yí wàn líng èr bǎi) - Mười nghìn không trăm hai mươi (10.200)
-  > Giải thích: Hàng nghìn là 0 đệm từ 零, tiếp theo là 二百.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一万二千三百 (yí wàn èr qiān sān bǎi) - Mười hai nghìn ba trăm (12.300)
-  > Giải thích: Tách 4 số đuôi: 1万 + 2千 + 3百.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一万五千零六十 (yí wàn wǔ qiān líng liù shí) - Mười lăm nghìn không trăm sáu mươi (15.060)
-  > Giải thích: Tách 4 số đuôi: 1万 + 5千, hàng trăm là 0 đệm 零, tiếp là 六十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两万 (liǎng wàn) - Hai mươi nghìn / Hai vạn (20.000)
-  > Giải thích: Số 2 đứng trước 万 đọc là 两万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两万五千六百 (liǎng wàn wǔ qiān liù bǎi) - Hai mươi lăm nghìn sáu trăm (25.600)
-  > Giải thích: Tách cụm 4 chữ số: 两万 + 五千 + 六百.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三万零八十 (sān wàn líng bā shí) - Ba mươi nghìn không trăm tám mươi (30.080)
-  > Giải thích: Hàng nghìn và hàng trăm là 0, đệm 1 lần 零 trước 八十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 四万八千九百 (sì wàn bā qiān jiǔ bǎi) - Bốn mươi tám nghìn chín trăm (48.900)
-  > Giải thích: Tách cụm 4 chữ số: 四万 + 八千 + 九百.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九万九千九百九十九 (jiǔ wàn jiǔ qiān jiǔ bǎi jiǔ shí jiǔ) - Chín mươi chín nghìn chín trăm chín mươi chín (99.999)
-  > Giải thích: Cấu trúc số lớn nhất có 5 chữ số ghép tuần tự vạn, nghìn, trăm, chục, đơn vị.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 * **Con số luyện tập hàng vạn**: 10074, 10023, 10206, 36214, 49832, 58737, 98429, 10090, 10782, 11762, 13927, 19863, 22424, 38291, 41528, 11927, 12789, 27893, 63521, 93452, 78362, 85291, 74219.
 
@@ -172,25 +172,25 @@
 
 * **VÍ DỤ**:
 - 一百万 (yì bǎi wàn) - Một triệu (1.000.000)
-  > Giải thích: 1.000.000 có 6 số 0, tách 4 số 0 thành 万, còn lại 100 đọc là 一百万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两百万 (liǎng bǎi wàn) - Hai triệu (2.000.000)
-  > Giải thích: 2 triệu = 200 vạn, đọc là 两百万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两百五十万 (liǎng bǎi wǔ shí wàn) - Hai triệu năm trăm nghìn (2.500.000)
-  > Giải thích: 2.500.000 = 250 vạn, đọc là 两百五十万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 五百万零八千 (wǔ bǎi wàn líng bā qiān) - Năm triệu lẻ tám nghìn (5.008.000)
-  > Giải thích: 5.008.000 = 500万 + số 0 ở hàng vạn đọc 零 + 八千.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 八百三十万 (bā bǎi sān shí wàn) - Tám triệu ba trăm nghìn (8.300.000)
-  > Giải thích: 8.300.000 = 830 vạn, đọc là 八百三十万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千万 (yì qiān wàn) - Mười triệu (10.000.000)
-  > Giải thích: 10 triệu = 1.000 vạn, biểu thị bằng 一千万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千二百三十万 (yì qiān èr bǎi sān shí wàn) - Mười hai triệu ba trăm nghìn (12.300.000)
-  > Giải thích: 12.300.000 = 1.230 vạn, đọc là 一千二百三十万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 两千万 (liǎng qiān wàn) - Hai mươi triệu (20.000.000)
-  > Giải thích: 20 triệu = 2.000 vạn, đọc là 两千万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三千五百六十万 (sān qiān wǔ bǎi liù shí wàn) - Ba mươi lăm triệu sáu trăm nghìn (35.600.000)
-  > Giải thích: 35.600.000 = 3.560 vạn, đọc là 三千五百六十万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九千九百九十九万九千九百九十九 (jiǔ qiān jiǔ bǎi jiǔ shí jiǔ wàn jiǔ qiān jiǔ bǎi jiǔ shí jiǔ) - Chín mươi chín triệu chín trăm chín mươi chín nghìn chín trăm chín mươi chín (99.999.999)
-  > Giải thích: Tách 4 chữ số sau (9999) và đọc phần vạn phía trước (9999万) rồi ghép lại.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 * **Con số luyện tập hàng triệu**: 1.000.500, 1.002.740, 139.0820, 182.1954, 149.7246, 198.7457, 2.693.512, 42.000.000, 3.976.000, 6.080.567, 876.9432, 14.832.000, 8.954.000, 10.004.754, 15.392.980, 27.976.123, 70.963.484, 27.000.000.
 
@@ -208,23 +208,23 @@
 
 * **VÍ DỤ**:
 - 一亿 (yí yì) - Một trăm triệu (100.000.000)
-  > Giải thích: Đơn vị 亿 biểu thị hàng trăm triệu (8 chữ số 0 phía sau).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 二亿 (èr yì) - Hai trăm triệu (200.000.000)
-  > Giải thích: Số 2 đứng trước 亿 đọc là 二亿 (hoặc 两亿).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三亿五千万 (sān yì wǔ qiān wàn) - Ba trăm năm mươi triệu (350.000.000)
-  > Giải thích: 350.000.000 = 3 亿 (300 triệu) + 5000 万 (50 triệu).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 四亿二千万 (sì yì èr qiān wàn) - Bốn trăm hai mươi triệu (420.000.000)
-  > Giải thích: 420.000.000 = 4 亿 + 2000 万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 五亿零八百万 (wǔ yì líng bā bǎi wàn) - Năm trăm lẻ tám triệu (508.000.000)
-  > Giải thích: 508.000.000 = 5 亿 + đệm 零 cho hàng nghìn vạn khuyết + 800 万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 十亿 (shí yì) - Một tỷ (1.000.000.000)
-  > Giải thích: Tiếng Trung không có từ riêng cho "tỷ", 1 tỷ = 10 lần 100 triệu nên đọc là 十亿.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 二十亿 (èr shí yì) - Hai tỷ (2.000.000.000)
-  > Giải thích: 2 tỷ = 20 lần 100 triệu, đọc là 二十亿.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三十六亿 (sān shí liù yì) - Ba tỷ sáu trăm triệu (3.600.000.000)
-  > Giải thích: 3,6 tỷ = 36 lần 100 triệu, đọc là 三十六亿.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 五十亿零八千万 (wǔ shí yì líng bā qiān wàn) - Năm tỷ không trăm tám mươi triệu (5.080.000.000)
-  > Giải thích: 5 tỷ = 50 亿, đệm 零 ở giữa và ghép 8000 万 (80 triệu).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 * **Con số luyện tập hàng trăm triệu**: 106.000.000, 1.3089.0832, 1.2198.6000, 150.000.000, 1.0797.6000, 294.000.000, 409.230.000, 745.932.000, 680.251.854, 980.000.000, 11.000.000.000, 10.000.000.000, 4.800.000.000, 5.752.964.000, 20.426.000.000, 9.090.000.000, 6.321.000.000.
 
@@ -236,15 +236,15 @@
 *Đổi số → Tiếng Trung:*
 
 - 十二 (shí èr) - 12
-  > Giải thích: Số 12 gồm hàng chục (十) và đơn vị (二).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 二十五 (èr shí wǔ) - 25
-  > Giải thích: Số 25 gồm hàng chục (二十) và đơn vị (五).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 六十八 (liù shí bā) - 68
-  > Giải thích: Số 68 gồm hàng chục (六十) và đơn vị (八).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一百零五 (yì bǎi líng wǔ) - 105
-  > Giải thích: Số 105 có hàng trăm (一百), hàng chục là 0 đệm 零, đơn vị là 五.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三百二十 (sān bǎi èr shí) - 320
-  > Giải thích: Số 320 gồm hàng trăm (三百) và hàng chục (二十).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 
 ---
 
@@ -254,11 +254,11 @@
 - 四百五十 (sì bǎi wǔ shí) - 450
   > Giải thích: Số 450 gồm hàng trăm (四百) và hàng chục (五十).
 - 两千零六 (liǎng qiān líng liù) - 2.006
-  > Giải thích: Số 2.006 gồm hàng nghìn (两千), số 0 ở giữa đệm 零, đơn vị là 六.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千二百八十 (yì qiān èr bǎi bā shí) - 1.280
-  > Giải thích: Cấu trúc ghép tuần tự hàng nghìn (一千), hàng trăm (二百), hàng chục (八十).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 三千五百 (sān qiān wǔ bǎi) - 3.500
-  > Giải thích: Cấu trúc ghép hàng nghìn (三千) và hàng trăm (五百).
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九千九百九十九 (jiǔ qiān jiǔ bǎi jiǔ shí jiǔ) - 9.999
   > Giải thích: Cấu trúc số 4 chữ số ghép đầy đủ các hàng 千, 百, 十 và đơn vị.
 
@@ -272,9 +272,9 @@
 - 一万二千三百 (yí wàn èr qiān sān bǎi) - 12.300
   > Giải thích: Tách 4 chữ số từ dưới lên: 1万 + 2千 + 3百.
 - 两万五千零六十 (liǎng wàn wǔ qiān líng liù shí) - 25.060
-  > Giải thích: Tách 4 chữ số: 2万 + 5千 + số 0 ở hàng trăm đọc là 零 + 六十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 四万零八十 (sì wàn líng bā shí) - 40.080
-  > Giải thích: Tách 4 chữ số: 4万 + các hàng 0 ở giữa đệm 1 lần 零 + 八十.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 九万九千九百九十九 (jiǔ wàn jiǔ qiān jiǔ bǎi jiǔ shí jiǔ) - 99.999
   > Giải thích: Ghép đầy đủ từ hàng vạn (九万) đến các hàng nghìn, trăm, chục, đơn vị.
 
@@ -288,7 +288,7 @@
 - 两百五十万 (liǎng bǎi wǔ shí wàn) - 2.500.000
   > Giải thích: 2,5 triệu quy đổi bằng 250 vạn, đọc là 两百五十万.
 - 八百零三万 (bā bǎi líng sān wàn) - 8.030.000
-  > Giải thích: 8.030.000 quy đổi bằng 803 vạn, đọc là 八百零三万.
+  > Giải thích: 零(líng - 0),十(shí),百(bǎi - 100), 千(qiān - 1000), 万(wàn - 10.000)
 - 一千二百三十万 (yì qiān èr bǎi sān shí wàn) - 12.300.000
   > Giải thích: 12,3 triệu quy đổi bằng 1.230 vạn, đọc là 一千二百三十万.
 - 三千五百六十万 (sān qiān wǔ bǎi liù shí wàn) - 35.600.000

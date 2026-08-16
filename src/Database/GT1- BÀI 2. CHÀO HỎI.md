@@ -29,6 +29,13 @@
 | 23 | 我叫 | wǒ jiào | Tôi tên là |
 | 24 | 名字 | míng zi | Tên |
 | 25 | 拜拜 | bài bai | Bye bye |
+| 26 | 大家好 | Dàjiā hǎo | Chào mọi người |
+| 27 | 是 | shì | Là, đúng, phải |
+| 28 | 最近 | Zuìjìn | Gần đây, dạo này, gần nhất |
+| 29 | 医生 | Yīshēng | Bác sĩ |
+| 30 | 我也是 | Wǒ yě shì | Tôi cũng vậy |
+| 31 | 是的 | Shì de | Vâng, đúng vậy |
+| 32 | 好久 | Hǎojiǔ | Lâu rồi |
 
 *Ghi chú mở rộng từ bài học:*
 - 大家好 (Dàjiā hǎo): Chào mọi người
@@ -61,9 +68,7 @@
 **a) Dùng với đại từ chỉ người**
 
 - 我们是学生。 (Wǒmen shì xuéshēng.) - Chúng tôi là học sinh.
-  > Giải thích: Đại từ "我们" (chúng tôi) làm chủ ngữ, kết hợp với động词 "是" (là) và danh词 "学生" (học sinh).
 - 你们好吗？ (Nǐmen hǎo ma?) - Các bạn khỏe không?
-  > Giải thích: Đại từ "你们" (các bạn) kết hợp với từ chào hỏi/tính từ "好" và trợ từ nghi vấn "吗" đặt ở cuối câu.
 
 **b) Dùng với danh từ chỉ người**
 - Mở rộng nhóm từ chỉ người: 学生 (xuéshēng - học sinh), 老师 (lǎoshī - thầy/cô giáo), (好)朋友 ((hǎo) péngyou - bạn (tốt))... -> Có thể ghép thêm 们: 学生们 (các học sinh), 老师们 (các thầy cô giáo)...
@@ -77,11 +82,10 @@
 
 Ví dụ:
 - 你好！ (Nǐ hǎo!) - Xin chào!
-  > Giải thích: Câu chào tiêu chuẩn ghép từ đại từ "你" (bạn) và tính từ "好" (tốt/an lành).
+  > Giải thích: 你好 + (đối tượng): Xin chào
 - 你好，老师！ (Nǐ hǎo, lǎo shī!) - Chào thầy/cô!
-  > Giải thích: Lời chào kèm danh từ chỉ đối tượng giao tiếp "老师" (thầy/cô giáo).
-- 医生！ (Yīshēng!) - Bác sĩ! / Chào bác sĩ!
-  > Giải thích: Danh từ "医生" (bác sĩ) dùng trực tiếp để xưng呼/chào hỏi trong ngữ cảnh giao tiếp.
+  > Giải thích: 你好 + (đối tượng): Xin chào
+- 医生！ (Yīshēng!) - Bác sĩ! 
 
 ---
 
@@ -92,9 +96,9 @@ Ví dụ:
 
 Ví dụ:
 - 我叫安。 (Wǒ jiào Ān.) - Tôi tên An.
-  > Giải thích: Chủ ngữ "我" (tôi) + động từ "叫" (tên là/gọi là) + Tên riêng "安" (An).
+  > Giải thích: 我叫 + TÊN: Dùng để giới thiệu bản thân
 - 我叫玲玲。 (Wǒ jiào Línglíng.) - Tôi tên Linh Linh.
-  > Giải thích: Chủ ngữ "我" (tôi) + động từ "叫" (tên là/gọi là) + Tên riêng lặp "玲玲" (Linh Linh).
+  > Giải thích: 我叫 + TÊN: Dùng để giới thiệu bản thân
 
 ---
 
@@ -113,33 +117,20 @@ Các mẫu câu giao tiếp:
 - 你好！ (Nǐ hǎo!) - Xin chào!
   > Giải thích: Mẫu câu chào hỏi cơ bản nhất dùng trong mọi tình huống.
 - 早安！ (Zǎo ān!) - Chào buổi sáng!
-  > Giải thích: "早" (sáng) + "安" (an lành), cách chào buổi sáng trang trọng/trực tiếp.
 - 早上好！ (Zǎoshang hǎo!) - Chào buổi sáng!
-  > Giải thích: Danh từ chỉ thời gian "早上" (buổi sáng) + "好" (tốt/lành).
 - 中午好！ (Zhōngwǔ hǎo!) - Chào buổi trưa!
-  > Giải thích: Danh từ chỉ thời gian "中午" (buổi trưa) + "好" (tốt/lành).
 - 下午好！ (Xiàwǔ hǎo!) - Chào buổi chiều!
-  > Giải thích: Danh từ chỉ thời gian "下午" (buổi chiều) + "好" (tốt/lành).
 - 晚上好！ (Wǎnshang hǎo!) - Chào buổi tối!
-  > Giải thích: Danh từ chỉ thời gian "晚上" (buổi tối) + "好" (tốt/lành).
 - 你好吗？ (Nǐ hǎo ma?) - Bạn khỏe không?
-  > Giải thích: Câu hỏi thăm sức khỏe dùng trợ từ nghi vấn "吗" ở cuối câu.
+  > Giải thích: 你好 + (đối tượng): Xin chào
 - 你最近好吗？ (Nǐ zuìjìn hǎo ma?) - Dạo này bạn khỏe không?
-  > Giải thích: Thêm phó từ/danh từ thời gian "最近" (dạo này/gần đây) vào trước tính từ "好".
 - 我最近很好。 (Wǒ zuìjìn hěn hǎo.) - Dạo này tôi rất khỏe.
-  > Giải thích: Câu trả lời khẳng định có mức độ, phó từ mức độ "很" đứng trước tính từ "好".
 - 不太好。 (Bù tài hǎo.) - Không tốt lắm / Không khỏe lắm.
-  > Giải thích: Cấu trúc phủ định "不太 + Tính từ" (không... lắm).
 - 你呢？ (Nǐ ne?) - Còn bạn thì sao?
-  > Giải thích: Trợ từ nghi vấn "呢" dùng để đặt câu hỏi tỉnh lược dựa trên ngữ cảnh vừa nhắc đến.
 - 我也是。 (Wǒ yě shì.) - Tôi cũng vậy.
-  > Giải thích: Phó từ "也" (cũng) đứng trước động từ "是" (là) thể hiện sự đồng tình/tương đồng.
 - 谢谢！ (Xièxie!) - Cảm ơn!
-  > Giải thích: Từ bày tỏ lòng biết ơn (động từ lặp).
 - 好久不见。 (Hǎojiǔ bù jiàn.) - Lâu rồi không gặp.
-  > Giải thích: "好久" (rất lâu) + "不见" (không gặp), câu xã giao khi lâu ngày mới gặp lại.
 - 再见！ (Zàijiàn!) - Tạm biệt!
-  > Giải thích: "再" (lại) + "见" (gặp), mang nghĩa hẹn gặp lại.
 
 ---
 
@@ -154,28 +145,21 @@ Các mẫu câu giao tiếp:
 - A: 你好吗？ (Nǐ hǎo ma?) - Bạn khỏe không?
   > Giải thích: Câu hỏi hỏi thăm tình hình sức khỏe.
 - B: 我很好。 (Wǒ hěn hǎo.) - Tôi rất khỏe.
-  > Giải thích: Câu trả lời sức khỏe tốt, lưu ý biến điệu thanh 3 (wǒ hěn hǎo -> wó hěn hǎo).
 - A: 今天忙吗？ (Jīntiān máng ma?) - Hôm nay bạn bận không?
-  > Giải thích: "今天" (hôm nay) + tính từ "忙" (bận) + trợ từ nghi vấn "吗".
 - B: 不忙，谢谢。 (Bù máng, xièxie.) - Không bận, cảm ơn.
-  > Giải thích: Phủ định "不" đứng trước tính từ "忙", kèm theo lời cảm ơn lịch sự.
 
 ---
 
 ### ❖ HỘI THOẠI 2: LÀM QUEN – GIỚI THIỆU TÊN
 
 - A: 你好，我叫安。 (Nǐ hǎo, wǒ jiào Ān.) - Xin chào, tôi tên An.
-  > Giải thích: Kết hợp lời chào và câu giới thiệu tên "我叫 + Tên".
+  > Giải thích: 我叫 + TÊN: Dùng để giới thiệu bản thân
 - B: 你好，我叫明。 (Nǐ hǎo, wǒ jiào Míng.) - Xin chào, tôi tên Minh.
-  > Giải thích: Chào lại và giới thiệu tên của người B.
+  > Giải thích: 我叫 + TÊN: Dùng để giới thiệu bản thân
 - A: 你是学生吗？ (Nǐ shì xuéshēng ma?) - Bạn là học sinh à?
-  > Giải thích: Cấu trúc câu hỏi Phán đoán: "Chủ ngữ + 是 + Danh từ + 吗?".
 - B: 是的，我是学生。 (Shì de, wǒ shì xuéshēng.) - Vâng, tôi là học sinh.
-  > Giải thích: "是的" (đúng vậy/vâng) dùng để xác nhận câu hỏi phán đoán.
 - A: 很高兴认识你。 (Hěn gāo xìng rèn shi nǐ.) - Rất vui được quen bạn.
-  > Giải thích: "很高兴" (rất vui) + "认识你" (quen biết bạn), câu xã giao khi mới làm quen.
 - B: 我也很高兴。 (Wǒ yě hěn gāo xìng.) - Tôi cũng rất vui.
-  > Giải thích: Thêm phó từ "也" (cũng) thể hiện sự đáp lại cảm xúc tương tự.
 
 ---
 
@@ -186,9 +170,7 @@ Các mẫu câu giao tiếp:
 - B: 早上好！ (Zǎoshang hǎo!) - Chào buổi sáng!
   > Giải thích: Đáp lại lời chào buổi sáng.
 - A: 你今天好吗？ (Nǐ jīntiān hǎo ma?) - Hôm nay bạn khỏe không?
-  > Giải thích: Thêm danh từ thời gian "今天" (hôm nay) vào giữa chủ ngữ và vị ngữ.
 - B: 还好。 (Hái hǎo.) - Cũng ổn / Cũng tạm.
-  > Giải thích: "还" (vẫn/cũng) + "好" (tốt), diễn tả trạng thái ở mức trung bình/bình thường.
 
 ---
 
@@ -249,4 +231,19 @@ Các mẫu câu giao tiếp:
 ---
 
 - 谢谢大家关注 (Xièxie dàjiā guānzhù) - Cảm ơn mọi người đã theo dõi
-  > Giải thích: Lời cảm ơn kết thúc buổi học/bài giảng ("关注" có nghĩa là theo dõi/quan tâm).
+
+
+- 你好，医生！ (Nǐ hǎo, yīshēng!) - Xin chào bác sĩ!
+  > Giải thích: 你好 + (đối tượng): Xin chào
+
+- 我叫李华。 (Wǒ jiào Lǐ Huá.) - Tôi tên là Lý Hoa.
+  > Giải thích: 我叫 + TÊN: Dùng để giới thiệu bản thân
+
+- 您好！ (Nín hǎo!) - Xin chào ngài!
+  > Giải thích: Mẫu câu chào hỏi cơ bản nhất dùng trong mọi tình huống.
+
+- 您好吗？ (Nín hǎo ma?) - Ngài có khỏe không?
+  > Giải thích: Câu hỏi hỏi thăm tình hình sức khỏe.
+
+- 早！ (Zǎo!) - Chào buổi sáng!
+  > Giải thích: Đáp lại lời chào buổi sáng.

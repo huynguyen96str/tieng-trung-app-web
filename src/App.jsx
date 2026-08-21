@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import './index.css'
-import { MarkdownParser } from './services/MarkdownParser'
 import { ProgressService } from './services/ProgressService'
 import { SpeechRecognitionService } from './services/SpeechRecognitionService'
 import { AudioVisualizer } from './components/AudioVisualizer'
@@ -63,20 +62,25 @@ function App() {
   const [analysisStats, setAnalysisStats] = useState(null);
 
   useEffect(() => {
-    const parser = new MarkdownParser();
-    const mdFiles = import.meta.glob('./Database/*.md', { query: '?raw', import: 'default', eager: true });
+    const jsonFiles = import.meta.glob('./Database/*.json', { eager: true });
     const parsedLessons = [];
 
-    for (const path in mdFiles) {
-      const content = mdFiles[path];
-      try {
-        const lesson = parser.parseContent(content);
-        if (!lesson.Title) {
-           lesson.Title = path.replace('./Database/', '').replace('.md', '').replace(/_/g, ' ');
-        }
-        parsedLessons.push(lesson);
-      } catch (e) {
-        console.error("Error parsing " + path, e);
+    const sortedPaths = Object.keys(jsonFiles).sort((a, b) => {
+      return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
+    });
+
+    for (const path of sortedPaths) {
+      if (path.includes('_VocabGroups') || path.includes('_SentenceGroups') || path.includes('progress')) continue;
+
+      const fileData = jsonFiles[path];
+      const lesson = fileData.default || fileData;
+      if (lesson && typeof lesson === 'object') {
+        const cleanLesson = {
+          Title: lesson.Title || path.replace('./Database/', '').replace('.json', '').replace(/_/g, ' '),
+          Vocabularies: Array.isArray(lesson.Vocabularies) ? lesson.Vocabularies : [],
+          Sentences: Array.isArray(lesson.Sentences) ? lesson.Sentences : []
+        };
+        parsedLessons.push(cleanLesson);
       }
     }
 
@@ -821,10 +825,20 @@ function App() {
                 </div>
               )}
 
-              {currentSentence.SyntaxExplanation && (
-                <div style={{backgroundColor: '#FFFFF0', border: '1px solid #FAF089', borderRadius: '8px', padding: '15px', marginTop: '15px', textAlign: 'left'}}>
-                  <div style={{fontWeight: 'bold', color: '#B7791F', marginBottom: '5px'}}>💡 Giải thích:</div>
-                  <div style={{color: '#744210'}}>{currentSentence.SyntaxExplanation}</div>
+              {/* Hiển thị Giải thích ngữ pháp & Cấu trúc câu */}
+              {(currentSentence.SyntaxExplanation || currentSentence.syntaxExplanation || currentSentence.GrammarContext) && (
+                <div className="grammar-explanation-box">
+                  <div className="grammar-explanation-title">
+                    <span>💡 Giải thích ngữ pháp:</span>
+                    {currentSentence.GrammarContext && !currentSentence.GrammarContext.includes("MẪU CÂU") && (
+                      <span style={{fontWeight: 'normal', color: '#A16207', fontSize: '13px'}}>
+                        [{currentSentence.GrammarContext}]
+                      </span>
+                    )}
+                  </div>
+                  <div className="grammar-explanation-content">
+                    {currentSentence.SyntaxExplanation || currentSentence.syntaxExplanation || "Xem cấu trúc và từ vựng trong câu để ghép chính xác."}
+                  </div>
                 </div>
               )}
             </div>

@@ -2,20 +2,101 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #F5F7FA; /* WPF Background */
+  background-color: #F5F7FA;
   color: #2D3748;
   height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 
 .app-container {
   display: flex;
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
+  position: relative;
+}
+
+/* Mobile Topbar (Hidden on Desktop, Visible on Mobile) */
+.mobile-topbar {
+  display: none;
+  background-color: #1A202C;
+  color: white;
+  padding: max(10px, env(safe-area-inset-top)) 14px 10px 14px;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #2D3748;
+}
+
+.mobile-menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.mobile-menu-btn:active {
+  background-color: #2D3748;
+}
+
+.mobile-brand-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.mobile-lesson-pill {
+  background: #2D3748;
+  color: #CBD5E0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 14px;
+  border: 1px solid #4A5568;
+  cursor: pointer;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Sidebar Backdrop (Mobile Drawer Overlay) */
+.sidebar-backdrop {
+  display: none;
+}
+
+.sidebar-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-close-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #A0AEC0;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
 }
 
 /* Sidebar (Left Panel) */
@@ -32,7 +113,6 @@ body {
 .sidebar-title {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .sidebar-label {
@@ -52,6 +132,7 @@ body {
   border-radius: 5px;
   margin-bottom: 20px;
   outline: none;
+  width: 100%;
 }
 
 .sidebar-btn {
@@ -59,7 +140,7 @@ body {
   color: #A0AEC0;
   font-size: 16px;
   font-weight: 600;
-  padding: 15px 20px;
+  padding: 14px 18px;
   text-align: left;
   border: none;
   border-radius: 10px;
@@ -130,12 +211,15 @@ body {
   font-weight: bold;
   color: #2B6CB0;
   margin-bottom: 10px;
+  line-height: 1.1;
+  text-align: center;
 }
 
 .vocab-pinyin {
   font-size: 36px;
   color: #4A5568;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .vocab-meaning {
@@ -143,6 +227,7 @@ body {
   font-weight: 600;
   color: #2B6CB0;
   margin-top: 15px;
+  text-align: center;
 }
 
 .btn-show-meaning {
@@ -449,72 +534,6 @@ body {
   background-color: #CBD5E0;
 }
 
-/* Responsive Design for Mobile (e.g. iPhone 12 Pro Max) */
-@media (max-width: 768px) {
-  body {
-    overflow-y: auto;
-  }
-  .app-container {
-    flex-direction: column;
-    height: auto;
-    min-height: 100vh;
-  }
-  .sidebar {
-    width: 100%;
-    padding: 20px 15px;
-  }
-  .sidebar-title {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .main-content {
-    border-radius: 0;
-    padding: 15px;
-    box-shadow: none;
-    overflow-y: visible;
-  }
-  .view-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
-  .view-header > div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .view-title { font-size: 20px; }
-  .sidebar-title { font-size: 20px; margin-bottom: 15px; }
-  .sidebar-select { font-size: 14px; padding: 8px; margin-bottom: 10px; }
-  .sidebar-btn { font-size: 14px; padding: 10px 15px; }
-  .btn-generate { font-size: 14px; padding: 10px 15px; }
-  .option-btn { font-size: 14px; padding: 10px; }
-  
-  .vocab-chinese { font-size: 40px; }
-  .vocab-pinyin { font-size: 20px; }
-  .vocab-meaning { font-size: 16px; margin-top: 10px; }
-  .flashcard { min-height: 150px; padding: 15px; }
-  .options-grid { grid-template-columns: 1fr; }
-  
-  .pieces-container { justify-content: center; gap: 8px; }
-  .piece-btn { font-size: 16px; padding: 8px 12px; }
-  
-  .match-prompt-header { flex-direction: column; gap: 5px; }
-  .match-prompt-header > div { font-size: 20px !important; }
-  .match-action-buttons {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px !important;
-    width: 100%;
-    padding: 12px 10px;
-    font-size: 14px;
-    margin: 0;
-  }
-  .analysis-stats-summary {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 /* Practice Mode Toggle */
 .practice-mode-toggle {
   display: flex;
@@ -600,7 +619,6 @@ body {
   line-height: 1.5;
 }
 
-
 /* Grammar Explanation Box in Match View */
 .grammar-explanation-box {
   background: linear-gradient(135deg, #FFFDF5 0%, #FEF9C3 100%);
@@ -648,4 +666,180 @@ body {
 
 .grammar-toggle-btn:hover {
   background: #FEF3C7;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN FOR MOBILE & TABLETS (e.g. iPhone 12 Pro Max - 428x926)
+   ============================================================ */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+    height: 100%;
+    min-height: 100dvh;
+  }
+
+  .app-container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100dvh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Show Mobile Topbar */
+  .mobile-topbar {
+    display: flex;
+  }
+
+  /* Sidebar as Drawer Overlay */
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    z-index: 998;
+    animation: fadeIn 0.2s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(300px, 85vw);
+    height: 100%;
+    z-index: 999;
+    padding: max(20px, env(safe-area-inset-top)) 18px max(20px, env(safe-area-inset-bottom)) 18px;
+    box-shadow: none;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar.mobile-open {
+    transform: translateX(0);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar-header-row {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-title {
+    font-size: 20px;
+  }
+
+  .sidebar-close-btn {
+    display: block;
+  }
+
+  /* Main Content Full Width on Mobile */
+  .main-content {
+    flex: 1;
+    width: 100%;
+    border-radius: 0;
+    padding: 15px 12px max(20px, env(safe-area-inset-bottom)) 12px;
+    box-shadow: none;
+    overflow-y: visible;
+  }
+
+  .view-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .view-header > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .view-title {
+    font-size: 22px;
+  }
+
+  /* Vocab Flashcard scaling */
+  .flashcard {
+    min-height: 170px;
+    padding: 20px 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+
+  .vocab-chinese {
+    font-size: clamp(40px, 12vw, 64px);
+    margin-bottom: 6px;
+  }
+
+  .vocab-pinyin {
+    font-size: clamp(18px, 5.5vw, 26px);
+    margin-bottom: 8px;
+  }
+
+  .vocab-meaning {
+    font-size: clamp(16px, 4.5vw, 20px);
+    margin-top: 8px;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .option-btn {
+    padding: 14px 12px;
+    font-size: 15px;
+    min-height: 50px;
+  }
+
+  /* Match View */
+  .match-prompt-area {
+    padding: 15px 10px;
+    border-radius: 12px;
+  }
+
+  .pieces-container {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .piece-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+    min-height: 44px;
+  }
+
+  .match-action-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px !important;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .match-action-buttons button {
+    padding: 12px 10px;
+    font-size: 14px;
+    min-height: 46px;
+  }
+
+  /* Analysis Modal */
+  .modal-content {
+    padding: 20px 15px;
+    max-height: 85vh;
+  }
+
+  .analysis-stats-summary {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
 }

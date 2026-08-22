@@ -3,6 +3,7 @@ import './index.css'
 import { ProgressService } from './services/ProgressService'
 import { SpeechRecognitionService } from './services/SpeechRecognitionService'
 import { AudioVisualizer } from './components/AudioVisualizer'
+import { ReflexGame } from './components/ReflexGame'
 import { pinyin } from 'pinyin-pro'
 
 const progressService = new ProgressService();
@@ -22,6 +23,7 @@ function App() {
   const [currentView, setCurrentView] = useState('Vocab');
   const [lessons, setLessons] = useState([]);
   const [selectedLesson, setSelectedLesson] = useState(null);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   
   // --- Vocab State ---
   const [vocabList, setVocabList] = useState([]);
@@ -466,6 +468,7 @@ function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (currentView === 'Game') return;
 
       if (currentView === 'Vocab' && vocabPracticeMode === 'MultipleChoice' && vocabOptions.length > 0 && !isMeaningVisible) {
          if (e.key >= '1' && e.key <= '9') {
@@ -563,9 +566,37 @@ function App() {
   return (
     <div className="app-container">
 
-      {/* LEFT SIDEBAR */}
-      <div className="sidebar">
-        <div className="sidebar-title">Đường Tới HSK</div>
+      {/* MOBILE TOPBAR (Visible on <= 768px) */}
+      <div className="mobile-topbar">
+        <button 
+          className="mobile-menu-btn" 
+          onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMobileNavOpen ? '✕' : '☰'}
+        </button>
+        <div className="mobile-brand-title">
+          {currentView === 'Vocab' ? '📝 Học Từ Vựng' : currentView === 'Match' ? '🧩 Ghép Câu' : '🎮 Đấu Trường'}
+        </div>
+        <div className="mobile-lesson-pill" onClick={() => setIsMobileNavOpen(true)}>
+          {selectedLesson ? (selectedLesson.Title.length > 15 ? selectedLesson.Title.substring(0, 15) + '...' : selectedLesson.Title) : 'Bài học'} ▾
+        </div>
+      </div>
+
+      {/* MOBILE BACKDROP OVERLAY */}
+      {isMobileNavOpen && (
+        <div 
+          className="sidebar-backdrop" 
+          onClick={() => setIsMobileNavOpen(false)} 
+        />
+      )}
+
+      {/* LEFT SIDEBAR (Desktop Fixed / Mobile Slide Drawer) */}
+      <div className={`sidebar ${isMobileNavOpen ? 'mobile-open' : ''}`}>
+        <div className="sidebar-header-row">
+          <div className="sidebar-title">Đường Tới HSK</div>
+          <button className="sidebar-close-btn" onClick={() => setIsMobileNavOpen(false)}>✕</button>
+        </div>
         
         <div className="sidebar-label">CHỌN BÀI HỌC</div>
         <select 
@@ -574,6 +605,7 @@ function App() {
           onChange={(e) => {
             const l = lessons.find(x => x.Title === e.target.value);
             if (l) setSelectedLesson(l);
+            setIsMobileNavOpen(false);
           }}
         >
           {lessons.map((l, i) => (
@@ -584,15 +616,21 @@ function App() {
         <div className="sidebar-label">MENU CHỨC NĂNG</div>
         <button 
           className={`sidebar-btn ${currentView === 'Vocab' ? 'active' : ''}`}
-          onClick={() => setCurrentView('Vocab')}
+          onClick={() => { setCurrentView('Vocab'); setIsMobileNavOpen(false); }}
         >
           📝 Học Từ Vựng
         </button>
         <button 
           className={`sidebar-btn ${currentView === 'Match' ? 'active' : ''}`}
-          onClick={() => setCurrentView('Match')}
+          onClick={() => { setCurrentView('Match'); setIsMobileNavOpen(false); }}
         >
           🧩 Ghép / Dịch Câu
+        </button>
+        <button 
+          className={`sidebar-btn ${currentView === 'Game' ? 'active' : ''}`}
+          onClick={() => { setCurrentView('Game'); setIsMobileNavOpen(false); }}
+        >
+          🎮 Đấu Trường Phản Xạ
         </button>
 
         <div className="sidebar-label">CÀI ĐẶT</div>
@@ -892,6 +930,16 @@ function App() {
               </div>
             </div>
           </div>
+        )}
+
+        {/* REFLEX GAME VIEW */}
+        {currentView === 'Game' && (
+          <ReflexGame 
+            lessons={lessons}
+            selectedLesson={selectedLesson}
+            progressService={progressService}
+            handleSpeak={handleSpeak}
+          />
         )}
 
       </div>

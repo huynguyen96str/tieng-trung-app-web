@@ -843,3 +843,70 @@ body {
     gap: 8px;
   }
 }
+
+/* ==========================================================================
+   TTS AUDIO PLAYING & SPEAKER ANIMATIONS
+   ========================================================================== */
+@keyframes ttsWavePulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(49, 130, 206, 0.4));
+  }
+  50% {
+    transform: scale(1.22);
+    filter: drop-shadow(0 0 10px rgba(49, 130, 206, 0.85));
+  }
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 rgba(49, 130, 206, 0.4));
+  }
+}
+
+.tts-playing {
+  animation: ttsWavePulse 0.75s ease-in-out infinite !important;
+  display: inline-block;
+  color: #3182CE !important;
+}
+
+.speaker-btn {
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), filter 0.15s ease;
+  line-height: 1;
+  user-select: none;
+}
+
+.speaker-btn:hover {
+  transform: scale(1.18);
+}
+
+.speaker-btn:active {
+  transform: scale(0.92);
+}
+
+.sentence-action-btn {
+  transition: transform 0.15s ease;
+  line-height: 1;
+}
+
+.sentence-action-btn:hover {
+  transform: scale(1.2);
+}
+
+.sentence-action-btn:active {
+  transform: scale(0.9);
+}
+
+.piece-speak-icon {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  user-select: none;
+}
+
+.piece-speak-icon:hover {
+  transform: scale(1.3);
+}
+

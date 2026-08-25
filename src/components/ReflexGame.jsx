@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './ReflexGame.css';
+import { ttsService } from '../services/TtsService';
 
 export function ReflexGame({ lessons = [], selectedLesson, progressService, handleSpeak }) {
   // Game Configuration State
@@ -7,10 +8,18 @@ export function ReflexGame({ lessons = [], selectedLesson, progressService, hand
   const [selectedScope, setSelectedScope] = useState('AllLessons'); // 'AllLessons' | 'CurrentLesson' | 'Sentences'
   const [blitzTimeSetting, setBlitzTimeSetting] = useState(3); // 3 or 5
   const [isAutoPronounce, setIsAutoPronounce] = useState(true);
+  const [isTtsSpeaking, setIsTtsSpeaking] = useState(false);
   const [highScore, setHighScore] = useState(() => {
     const saved = localStorage.getItem('reflex_game_high_score');
     return saved ? parseInt(saved, 10) : 0;
   });
+
+  useEffect(() => {
+    const unsub = ttsService.subscribe((speaking) => {
+      setIsTtsSpeaking(speaking);
+    });
+    return () => unsub();
+  }, []);
 
   // State Machine: 'LOBBY' | 'PLAYING' | 'GAMEOVER'
   const [gameState, setGameState] = useState('LOBBY');
@@ -844,7 +853,7 @@ export function ReflexGame({ lessons = [], selectedLesson, progressService, hand
             <div className="prompt-main-row">
               <span className="prompt-chinese">{displayPrompt}</span>
               <button 
-                className="prompt-audio-icon"
+                className={`prompt-audio-icon ${isTtsSpeaking ? 'tts-playing' : ''}`}
                 onClick={() => playPromptAudio()}
                 title="Nghe lại âm thanh (Phím Space)"
               >

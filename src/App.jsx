@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import './index.css'
 import { ProgressService } from './services/ProgressService'
 import { SpeechRecognitionService } from './services/SpeechRecognitionService'
+import { ttsService } from './services/TtsService'
 import { AudioVisualizer } from './components/AudioVisualizer'
 import { ReflexGame } from './components/ReflexGame'
 import { pinyin } from 'pinyin-pro'
@@ -24,6 +25,10 @@ function App() {
   const [lessons, setLessons] = useState([]);
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  
+  // --- TTS State ---
+  const [isTtsSpeaking, setIsTtsSpeaking] = useState(false);
+  const [speakingText, setSpeakingText] = useState('');
   
   // --- Vocab State ---
   const [vocabList, setVocabList] = useState([]);
@@ -93,32 +98,16 @@ function App() {
       // Fallback
       setLessons([{ Title: "Chưa có dữ liệu", Vocabularies: [], Sentences: [] }]);
     }
-
-    // Global click listener to unlock Audio Engine on first interaction
-    const unlockAudio = () => {
-      if (!window.audioEngineInitialized && 'speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const preloadMsg = new SpeechSynthesisUtterance('');
-        preloadMsg.volume = 0;
-        window.speechSynthesis.speak(preloadMsg);
-        window.audioEngineInitialized = true;
-        document.removeEventListener('click', unlockAudio);
-      }
-    };
-    document.addEventListener('click', unlockAudio);
-    
-    return () => document.removeEventListener('click', unlockAudio);
   }, []);
 
-  const initAudioEngine = () => {
-    if (!window.audioEngineInitialized && 'speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const preloadMsg = new SpeechSynthesisUtterance('');
-      preloadMsg.volume = 0;
-      window.speechSynthesis.speak(preloadMsg);
-      window.audioEngineInitialized = true;
-    }
-  };
+  // Đăng ký theo dõi trạng thái phát âm TTS
+  useEffect(() => {
+    const unsubscribe = ttsService.subscribe((isSpeaking, text) => {
+      setIsTtsSpeaking(isSpeaking);
+      setSpeakingText(isSpeaking ? text : '');
+    });
+    return () => unsubscribe();
+  }, []);
 
   // When Lesson Changes
   useEffect(() => {
@@ -364,24 +353,8 @@ function App() {
   };
 
   const handleSpeak = (text, rate = 1.0) => {
-    initAudioEngine();
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      
-      setTimeout(() => {
-        const msg = new SpeechSynthesisUtterance(text);
-        msg.lang = 'zh-CN';
-        msg.rate = rate;
-        
-        const voices = window.speechSynthesis.getVoices();
-        const zhVoice = voices.find(v => v.lang.includes('zh') || v.lang.includes('cmn') || v.lang === 'zh-CN');
-        if (zhVoice) {
-           msg.voice = zhVoice;
-        }
-
-        window.speechSynthesis.speak(msg);
-      }, 50);
-    }
+    if (!text) return;
+    ttsService.speak(text, { rate });
   };
 
   // ===== MATCH LOGIC =====
@@ -688,7 +661,12 @@ function App() {
                 </div>
                 {(vocabPracticeMode === 'WritePinyin' || vocabDirection === 'Trung -> Việt') && (
                   <>
-                    <button onClick={() => handleSpeak(currentVocab.Chinese)} style={{ background:'transparent', border:'none', fontSize:'40px', cursor:'pointer', marginLeft:'20px' }}>
+                    <button 
+                      onClick={() => handleSpeak(currentVocab.Chinese)} 
+                      className={`speaker-btn ${isTtsSpeaking && speakingText === currentVocab.Chinese ? 'tts-playing' : ''}`}
+                      style={{ background:'transparent', border:'none', fontSize:'40px', cursor:'pointer', marginLeft:'20px' }}
+                      title="Nghe phát âm tiếng Trung"
+                    >
                       🔊
                     </button>
                     <button onClick={toggleRecording} style={{ background:'transparent', border:'none', fontSize:'40px', cursor:'pointer', marginLeft:'10px', display: 'flex', alignItems: 'center' }}>
@@ -836,8 +814,22 @@ function App() {
                 </div>
                 {matchDirection === 'Trung -> Việt' && (
                   <div className="icon-group">
-                    <button onClick={() => handleSpeak(currentSentence.Chinese, 0.5)} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} title="Nghe chậm">🐌</button>
-                    <button onClick={() => handleSpeak(currentSentence.Chinese)} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} title="Nghe">🔊</button>
+                    <button 
+                      onClick={() => handleSpeak(currentSentence.Chinese, 0.6)} 
+                      className={`sentence-action-btn ${isTtsSpeaking && speakingText === currentSentence.Chinese ? 'tts-playing' : ''}`}
+                      style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} 
+                      title="Nghe chậm"
+                    >
+                      🐌
+                    </button>
+                    <button 
+                      onClick={() => handleSpeak(currentSentence.Chinese)} 
+                      className={`sentence-action-btn ${isTtsSpeaking && speakingText === currentSentence.Chinese ? 'tts-playing' : ''}`}
+                      style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} 
+                      title="Nghe chuẩn"
+                    >
+                      🔊
+                    </button>
                     <button onClick={() => {navigator.clipboard.writeText(currentSentence.Chinese); alert("Đã copy!")}} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} title="Copy">📋</button>
                     <button onClick={toggleRecording} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer', display: 'flex', alignItems: 'center' }} title="Ghi âm">
                       {isRecording ? '⏹️' : '🎤'}
@@ -858,8 +850,22 @@ function App() {
                   <div style={{fontSize: '16px', color: '#4A5568', margin: '5px 0'}}>
                     {currentSentence.Pinyin}
                   </div>
-                  <button onClick={() => handleSpeak(currentSentence.Chinese, 0.5)} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} title="Nghe chậm">🐌</button>
-                  <button onClick={() => handleSpeak(currentSentence.Chinese)} style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} title="Nghe đáp án">🔊</button>
+                  <button 
+                    onClick={() => handleSpeak(currentSentence.Chinese, 0.6)} 
+                    className={`sentence-action-btn ${isTtsSpeaking && speakingText === currentSentence.Chinese ? 'tts-playing' : ''}`}
+                    style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} 
+                    title="Nghe chậm"
+                  >
+                    🐌
+                  </button>
+                  <button 
+                    onClick={() => handleSpeak(currentSentence.Chinese)} 
+                    className={`sentence-action-btn ${isTtsSpeaking && speakingText === currentSentence.Chinese ? 'tts-playing' : ''}`}
+                    style={{ background:'transparent', border:'none', fontSize:'24px', cursor:'pointer' }} 
+                    title="Nghe đáp án"
+                  >
+                    🔊
+                  </button>
                 </div>
               )}
 
@@ -891,7 +897,13 @@ function App() {
                       {matchDirection === 'Việt -> Trung' && (
                         <div style={{fontSize: '12px', marginTop: '5px', color: '#CBD5E0'}}>
                           <div>{pinyin(p.text)}</div>
-                          <div onClick={(e) => {e.stopPropagation(); handleSpeak(p.text)}}>🔊</div>
+                          <div 
+                            className={`piece-speak-icon ${isTtsSpeaking && speakingText === p.text ? 'tts-playing' : ''}`}
+                            onClick={(e) => {e.stopPropagation(); handleSpeak(p.text)}}
+                            title="Nghe từ"
+                          >
+                            🔊
+                          </div>
                         </div>
                       )}
                     </button>
@@ -908,7 +920,13 @@ function App() {
                       {matchDirection === 'Việt -> Trung' && (
                         <div style={{fontSize: '12px', marginTop: '5px', color: '#A0AEC0'}}>
                           <div>{pinyin(p.text)}</div>
-                          <div onClick={(e) => {e.stopPropagation(); handleSpeak(p.text)}}>🔊</div>
+                          <div 
+                            className={`piece-speak-icon ${isTtsSpeaking && speakingText === p.text ? 'tts-playing' : ''}`}
+                            onClick={(e) => {e.stopPropagation(); handleSpeak(p.text)}}
+                            title="Nghe từ"
+                          >
+                            🔊
+                          </div>
                         </div>
                       )}
                     </button>

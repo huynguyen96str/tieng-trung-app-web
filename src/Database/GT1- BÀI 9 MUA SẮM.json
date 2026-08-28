@@ -7,7 +7,7 @@
       "Chinese": "买",
       "Pinyin": "mǎi",
       "Meaning": "mua",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 1,
       "Topic": "",
@@ -19,7 +19,7 @@
       "Chinese": "卖",
       "Pinyin": "mài",
       "Meaning": "bán",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 2,
       "Topic": "",
@@ -31,7 +31,7 @@
       "Chinese": "买东西",
       "Pinyin": "mǎi dōngxi",
       "Meaning": "mua đồ",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 3,
       "Topic": "",
@@ -43,7 +43,7 @@
       "Chinese": "家",
       "Pinyin": "jiā",
       "Meaning": "nhà",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 4,
       "Topic": "",
@@ -55,7 +55,7 @@
       "Chinese": "商店",
       "Pinyin": "shāngdiàn",
       "Meaning": "cửa hàng",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 5,
       "Topic": "",
@@ -67,7 +67,7 @@
       "Chinese": "超市",
       "Pinyin": "chāoshì",
       "Meaning": "siêu thị, chợ",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 6,
       "Topic": "",
@@ -79,7 +79,7 @@
       "Chinese": "商场",
       "Pinyin": "shāngchǎng",
       "Meaning": "trung tâm thương mại",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 7,
       "Topic": "",
@@ -91,7 +91,7 @@
       "Chinese": "东西",
       "Pinyin": "dōngxi",
       "Meaning": "đồ, đồ vật",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 8,
       "Topic": "",
@@ -103,7 +103,7 @@
       "Chinese": "这个",
       "Pinyin": "zhège",
       "Meaning": "cái này",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 9,
       "Topic": "",
@@ -115,7 +115,7 @@
       "Chinese": "那个",
       "Pinyin": "nàge",
       "Meaning": "cái kia",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 10,
       "Topic": "",
@@ -127,7 +127,7 @@
       "Chinese": "多少钱",
       "Pinyin": "duōshao qián",
       "Meaning": "bao nhiêu tiền",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 11,
       "Topic": "",
@@ -139,7 +139,7 @@
       "Chinese": "价格",
       "Pinyin": "jiàgé",
       "Meaning": "giá cả",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 12,
       "Topic": "",
@@ -151,8 +151,8 @@
       "Chinese": "便宜",
       "Pinyin": "piányi",
       "Meaning": "rẻ",
-      "CorrectCount": 0,
-      "WrongCount": 0,
+      "CorrectCount": 7,
+      "WrongCount": 1,
       "DisplayIndex": 13,
       "Topic": "",
       "MemoryHint": "Ghép âm piányi (rẻ) -\u003E giá thấp."
@@ -163,8 +163,8 @@
       "Chinese": "贵",
       "Pinyin": "guì",
       "Meaning": "đắt",
-      "CorrectCount": 0,
-      "WrongCount": 0,
+      "CorrectCount": 7,
+      "WrongCount": 1,
       "DisplayIndex": 14,
       "Topic": "",
       "MemoryHint": "Ghép âm guì (đắt) -\u003E giá cao."
@@ -175,7 +175,7 @@
       "Chinese": "打折",
       "Pinyin": "dǎzhé",
       "Meaning": "giảm giá",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 15,
       "Topic": "",
@@ -187,7 +187,7 @@
       "Chinese": "试",
       "Pinyin": "shì",
       "Meaning": "thử",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 16,
       "Topic": "",
@@ -199,7 +199,7 @@
       "Chinese": "试一下",
       "Pinyin": "shì yíxià",
       "Meaning": "thử một chút",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 17,
       "Topic": "",
@@ -211,7 +211,7 @@
       "Chinese": "合适",
       "Pinyin": "héshì",
       "Meaning": "vừa, phù hợp",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 18,
       "Topic": "",
@@ -223,7 +223,7 @@
       "Chinese": "要",
       "Pinyin": "yào",
       "Meaning": "muốn / lấy",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 19,
       "Topic": "",
@@ -235,7 +235,7 @@
       "Chinese": "颜色",
       "Pinyin": "yánsè",
       "Meaning": "màu sắc",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 20,
       "Topic": "",
@@ -247,7 +247,7 @@
       "Chinese": "大",
       "Pinyin": "dà",
       "Meaning": "to",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 21,
       "Topic": "",
@@ -259,7 +259,7 @@
       "Chinese": "小",
       "Pinyin": "xiǎo",
       "Meaning": "nhỏ",
-      "CorrectCount": 0,
+      "CorrectCount": 9,
       "WrongCount": 0,
       "DisplayIndex": 22,
       "Topic": "",
@@ -271,7 +271,7 @@
       "Chinese": "件",
       "Pinyin": "jiàn",
       "Meaning": "lượng từ (áo, đồ)",
-      "CorrectCount": 0,
+      "CorrectCount": 7,
       "WrongCount": 0,
       "DisplayIndex": 23,
       "Topic": "",
@@ -283,7 +283,7 @@
       "Chinese": "双",
       "Pinyin": "shuāng",
       "Meaning": "đôi",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 24,
       "Topic": "",
@@ -295,7 +295,7 @@
       "Chinese": "现金",
       "Pinyin": "xiànjīn",
       "Meaning": "tiền mặt",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 25,
       "Topic": "",
@@ -307,11 +307,179 @@
       "Chinese": "付钱",
       "Pinyin": "fù qián",
       "Meaning": "trả tiền",
-      "CorrectCount": 0,
+      "CorrectCount": 6,
       "WrongCount": 0,
       "DisplayIndex": 26,
       "Topic": "",
       "MemoryHint": "Ghép từ fù (trả) và qián (tiền) -\u003E trả tiền."
+    },
+    {
+      "Id": 27,
+      "Guid": "c158a804-586f-440b-931f-c8364a0cb7cd",
+      "Chinese": "一点",
+      "Pinyin": "yìdiǎn",
+      "Meaning": "Một chút",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 27,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 28,
+      "Guid": "31b83768-8c2e-4018-b090-6c9cc9705cbb",
+      "Chinese": "一共",
+      "Pinyin": "yígòng",
+      "Meaning": "Tổng cộng",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 28,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 29,
+      "Guid": "4ff4f122-0e40-48f4-90f8-b3833640abce",
+      "Chinese": "那你",
+      "Pinyin": "nànǐ",
+      "Meaning": "vậy bạn",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 29,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 30,
+      "Guid": "11427d57-6e54-4e52-8a47-c4e4ab3a7aee",
+      "Chinese": "一下",
+      "Pinyin": "yíxià",
+      "Meaning": "Một chút",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 30,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 31,
+      "Guid": "dcfbf35b-281c-4e09-be45-077139b33c89",
+      "Chinese": "给你",
+      "Pinyin": "gěi nǐ",
+      "Meaning": "Cho bạn",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 31,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 32,
+      "Guid": "04fc1854-fe0c-46c0-b875-b67faf9b7b19",
+      "Chinese": "算",
+      "Pinyin": "suàn",
+      "Meaning": "Tính",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 32,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 33,
+      "Guid": "cb766ebe-77a1-45d4-a953-f4786312792f",
+      "Chinese": "别的",
+      "Pinyin": "biéde",
+      "Meaning": "Khác",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 33,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 34,
+      "Guid": "0559ce04-3f07-468d-a961-d164847d271e",
+      "Chinese": "扫码",
+      "Pinyin": "sǎomǎ",
+      "Meaning": "Quét mã",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 34,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 35,
+      "Guid": "8906faca-d741-437b-963e-8bf99a75e838",
+      "Chinese": "好看",
+      "Pinyin": "hǎokàn",
+      "Meaning": "Đẹp",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 35,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 36,
+      "Guid": "f638c627-a533-41e6-b19b-69378b70c638",
+      "Chinese": "还",
+      "Pinyin": "hái",
+      "Meaning": "Còn",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 36,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 37,
+      "Guid": "f0ee883c-ab07-438f-b002-f345d68d00e1",
+      "Chinese": "这里",
+      "Pinyin": "zhèlǐ",
+      "Meaning": "Ở đây",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 37,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 38,
+      "Guid": "aac97dc6-619e-4f20-897a-98f0e5db7f66",
+      "Chinese": "转账",
+      "Pinyin": "zhuǎnzhàng",
+      "Meaning": "Chuyển khoản",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 38,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 39,
+      "Guid": "e66e8e63-0a52-444b-9744-2eaf7f42c61b",
+      "Chinese": "给我",
+      "Pinyin": "gěiwǒ",
+      "Meaning": "Cho Tôi",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 39,
+      "Topic": "",
+      "MemoryHint": ""
+    },
+    {
+      "Id": 40,
+      "Guid": "8baf81ed-a6c3-4f10-865d-8229bf84f898",
+      "Chinese": "衣服",
+      "Pinyin": "yīfu",
+      "Meaning": "Quần áo",
+      "CorrectCount": 0,
+      "WrongCount": 0,
+      "DisplayIndex": 40,
+      "Topic": "",
+      "MemoryHint": ""
     }
   ],
   "Sentences": [
@@ -324,7 +492,7 @@
       "Pinyin": "Kěyǐ shì yíxià ma?",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 1",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -336,7 +504,7 @@
       "Pinyin": "Kěyǐ piányi yìdiǎn ma?",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 1",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -348,7 +516,7 @@
       "Pinyin": "Gěi wǒ yí jiàn zhège.",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 2",
       "SyntaxExplanation": "Lấy cho tôi…: 给我(Gěi wǒ) ...",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -360,7 +528,7 @@
       "Pinyin": "Gěi wǒ liǎng píng shuǐ.",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 2",
       "SyntaxExplanation": "Lấy cho tôi…: 给我(Gěi wǒ) ...",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -372,7 +540,7 @@
       "Pinyin": "Hái yǒu bié de yánsè ma?",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 3",
       "SyntaxExplanation": "Còn… không: 还有(Hái yǒu)...?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -384,7 +552,7 @@
       "Pinyin": "Hái yǒu dà yìdiǎn de ma?",
       "GrammarContext": "02 NGỮ PHÁP CƠ BẢN - CẤU TRÚC 3",
       "SyntaxExplanation": "Còn… không: 还有(Hái yǒu)...?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -396,7 +564,7 @@
       "Pinyin": "Zhège duōshao qián?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -408,7 +576,7 @@
       "Pinyin": "Nàge duōshao qián?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -420,7 +588,7 @@
       "Pinyin": "Yǒudiǎnr guì.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -432,7 +600,7 @@
       "Pinyin": "Zhège hěn piányi.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -444,7 +612,7 @@
       "Pinyin": "Wǒ kěyǐ shì yíxià zhège ma?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -456,7 +624,7 @@
       "Pinyin": "Zhè jiàn yīfu wǒ xiǎng shì yíxià.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -468,7 +636,7 @@
       "Pinyin": "Nàge yánsè bú tài hǎo, wǒ xiǎng yào zhège yánsè.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -480,7 +648,7 @@
       "Pinyin": "Zhège hěn hǎo, wǒ yào zhège.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -492,7 +660,7 @@
       "Pinyin": "Gěi wǒ yí jiàn zhège yánsè de.",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "Lấy cho tôi…: 给我(Gěi wǒ) ...",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -504,7 +672,7 @@
       "Pinyin": "Yígòng duōshao qián?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -516,7 +684,7 @@
       "Pinyin": "Kěyǐ yòng xiànjīn fù qián ma?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -528,7 +696,7 @@
       "Pinyin": "Zhèlǐ kěyǐ zhuǎnzhàng ma?",
       "GrammarContext": "03 MẪU CÂU THÔNG DỤNG",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -540,7 +708,7 @@
       "Pinyin": "Nǐhǎo, wǒ xiǎng mǎi dōngxi.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -552,7 +720,7 @@
       "Pinyin": "Hǎo de, nǐ kànkan zhège.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -564,7 +732,7 @@
       "Pinyin": "Zhège duōshao qián?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -576,7 +744,7 @@
       "Pinyin": "Bú guì, jiàgé hěn piányi.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -588,7 +756,7 @@
       "Pinyin": "Kěyǐ shì yíxià ma?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -600,7 +768,7 @@
       "Pinyin": "Kěyǐ, nǐ shìshi ba.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 1",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -612,7 +780,7 @@
       "Pinyin": "Zhège yǒudiǎn xiǎo.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 2",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -624,7 +792,7 @@
       "Pinyin": "Nà nǐ shìshi dà yìdiǎn de. Nǐ xǐhuan zhège yánsè ma?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 2",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -636,7 +804,7 @@
       "Pinyin": "Xǐhuan, zhège hěn hǎokàn. Piányi yìdiǎn kěyǐ ma?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 2",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -648,7 +816,7 @@
       "Pinyin": "Kěyǐ",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 2",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -660,7 +828,7 @@
       "Pinyin": "Nǐ hǎo, zhège duōshao qián?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 3",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -672,7 +840,7 @@
       "Pinyin": "bú guì, sānshíwǔ kuài.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 3",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -684,7 +852,7 @@
       "Pinyin": "Wǒ mǎi liǎng gè, kěyǐ piányi yìdiǎn ma?",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 3",
       "SyntaxExplanation": "Có thể làm gì: 可以(kěyǐ)/能(néng)",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -696,7 +864,7 @@
       "Pinyin": "Hǎo de, gěi nǐ suàn sānshí kuài yí gè.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 3",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -708,7 +876,7 @@
       "Pinyin": "Hǎo de, wǒ sǎomǎ fù qián.",
       "GrammarContext": "04 HỘI THOẠI - HỘI THOẠI 3",
       "SyntaxExplanation": "",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -720,7 +888,7 @@
       "Pinyin": "Nǐ kěyǐ gěi wǒ kàn kàn nàgè ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ \u002B 可以 \u002B 给我 \u002B Động từ \u002B Tân ngữ \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -732,7 +900,7 @@
       "Pinyin": "Zhège yánsè kěyǐ gěi wǒ shì yīxià ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ \u002B 可以 \u002B 给我 \u002B Động từ \u002B 一下 \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -744,7 +912,7 @@
       "Pinyin": "Hái yǒu piányí yīdiǎn de dōngxi ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: 还有 \u002B Tính từ \u002B 一点 \u002B 的 \u002B Danh từ \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -756,7 +924,7 @@
       "Pinyin": "Zhège shāngchǎng hái yǒu dǎzhé de dōngxi ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ \u002B 还有 \u002B Động từ \u002B 的 \u002B Danh từ \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -768,7 +936,7 @@
       "Pinyin": "Nǐ néng gěi wǒ mǎi nàgè ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ \u002B 能 \u002B 给我 \u002B Động từ \u002B Tân ngữ \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -780,7 +948,7 @@
       "Pinyin": "Nǐ kěyǐ gěi wǒ shì yíxià zhè ge ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ (你) \u002B 可以 \u002B 给我 \u002B Động từ (试) \u002B 一下 \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
@@ -792,19 +960,19 @@
       "Pinyin": "Nǐ hái yǒu dǎzhé de dōngxi ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc: Chủ ngữ (你) \u002B 还有 \u002B Động từ (打折) \u002B 的 \u002B Danh từ (东西) \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     },
     {
       "Id": 0,
       "Guid": "52716a33-8abc-4234-94ea-c815f905e061",
-      "DisplayIndex": 0,
+      "DisplayIndex": 41,
       "Vietnamese": "Bạn còn cái nào lớn hơn một chút không?",
       "Chinese": "你还有大一点的吗？",
       "Pinyin": "Nǐ hái yǒu dà yīdiǎn de ma?",
       "GrammarContext": "MẪU CÂU \u0026 HỘI THOẠI",
       "SyntaxExplanation": "Cấu trúc 还有 \u002B Tính từ \u002B 一点 \u002B 的 \u002B Danh từ \u002B 吗?",
-      "CorrectCount": 0,
+      "CorrectCount": 1,
       "WrongCount": 0
     }
   ]
